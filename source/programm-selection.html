@@ -36,15 +36,110 @@
     <section class="programm-selection">
       <div class="programm-selection__wrapper">
         <h2 class="visually-hidden">Анкета питомца</h2>
+        <p>Заполните анкету и мы подберем программу питания для вашего кота</p>
         <form class="programm-selection__form questionnaire" action="https://echo.htmlacademy.ru" method="post">
-
+          <fieldset class="questionnaire__fileset">
+            <ul class="questionnaire__list about-cat">
+              <li class="questionnaire__item about-cat__item">
+                <label for="cat-name">Имя:*</label>
+                <input class="about-cat__name" id="cat-name" name="catName" type="text" placeholder="Барсик">
+              </li>
+              <li>
+                <label for="cat-weight">Вес (кг):*</label>
+                <input class="about-cat__weight" id="cat-weight" name="catWeight" type="number" min="1" placeholder="7">
+              </li>
+              <li>
+                <label for="cat-age">Возраст (лет):</label>
+                <input class="about-cat__age" id="cat-age" name="catAge" type="number" min="1" placeholder="7">
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="questionnaire__fileset">
+            <ul class="questionnaire__list">
+              <li class="questionnaire__item advice">
+                <label for="cat-slimming">Похудение</label>
+                <input class="visually-hidden" id="cat-slimming" name="advice" type="radio" value="slimming" checked>
+                <span class="radio-indicator"></span>
+              </li>
+              <li class="questionnaire__item advice">
+                <label for="cat-mass-gain">Набор массы</label>
+                <input class="visually-hidden" id="cat-mass-gain" name="advice" type="radio" value="cat-mass-gain">
+                <span class="radio-indicator"></span>
+              </li>
+              <li class="questionnaire__item advice">
+                <label for="cat-need-advice">Не знаю (Нужен ваш совет)</label>
+                <input class="visually-hidden" id="cat-need-advice" name="advice" type="radio" value="cat-need-advice">
+                <span class="radio-indicator"></span>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="questionnaire__fileset">
+            <legend class="questionnaire__legend">Контактные данные (владельца кота)</legend>
+            <ul class="questionnaire__list">
+              <li class="questionnaire__item cat-owner">
+                <label for="owner-email">E-mail:*</label>
+                <input class="cat-owner__email" id="owner-email" name="email" type="email"
+                  placeholder="kuklachev@gmail.com">
+              </li>
+              <li class="questionnaire__item cat-owner">
+                <label for="owner-phone">Телефон:*</label>
+                <input class="cat-owner__phone" id="owner-phone" name="phone" type="tel"
+                  placeholder="8 (960) 900-60-90">
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="questionnaire__fileset">
+            <legend class="questionnaire__legend">Комментарий</legend>
+            <textarea class="questionnaire__about-cat" name="aboutCat" id="about-cat" cols="30" rows="10"
+              placeholder="Расскажите обо всех повадках кота"></textarea>
+          </fieldset>
+          <fieldset class="questionnaire__fileset">
+            <legend class="questionnaire__legend">Дополнительно</legend>
+            <ul class="questionnaire__list">
+              <li class="questionnaire__item additionally">
+                <label for="sweetener">Сахарозаменитель</label>
+                <input class="visually-hidden" id="sweetener" name="sweetener" type="checkbox" value="sweetener"
+                  checked>
+                <span class="checkbox-indicator"></span>
+              </li>
+              <li class="questionnaire__item additionally">
+                <label for="drinking-water">Питьевая вода</label>
+                <input class="visually-hidden" id="drinking-water" name="drinkingWater" type="checkbox"
+                  value="drinking-water">
+                <span class="checkbox-indicator"></span>
+              </li>
+              <li class="questionnaire__item additionally">
+                <label for="milk">Молоко</label>
+                <input class="visually-hidden" id="milk" name="milk" type="checkbox" value="milk">
+                <span class="checkbox-indicator"></span>
+              </li>
+              <li class="questionnaire__item additionally">
+                <label for="vitamins">Витамины</label>
+                <input class="visually-hidden" id="vitamins" name="vitamins" type="checkbox" value="vitamins">
+                <span class="checkbox-indicator"></span>
+              </li>
+            </ul>
+          </fieldset>
+          <button class="questionnaire__send-request button" type="submit">Отправить заявку</button>
         </form>
-
+        <p class="programm-selection__required-fields">* — Обязательные поля</p>
       </div>
     </section>
 
     <section class="contacts">
-      <h2></h2>
+      <h2 class="visually-hidden">Нашни контакты</h2>
+      <div class="contacts__block">
+        <p class="contacts__invite">приглашаем к сотрудничеству дилеров!</p>
+        <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      </div>
+      <div class="contacts__box-map">
+        <img class="contacts__map" src="https://via.placeholder.com/320x400" width="320" height="400"
+          alt="Офис компании по адресу ул. Большая Конюшенная, д. 19/8, г. Санкт-Петербург">
+      </div>
+      <div class="contacts__box-map">
+        <script async
+          src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A7f4aa59c5243f04f6200fd04061c4f49243b56543306f3589322bafc185ebdcd&amp;width=320&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+      </div>
     </section>
 
     <footer class="page-footer">
