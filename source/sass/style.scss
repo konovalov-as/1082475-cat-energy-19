@@ -1,3 +1,13 @@
-body {
-  background: green;
-}
+// background-color, background-image
+// page index
+@import "blocks/food-for-cat.scss";
+@import "blocks/product.scss";
+@import "blocks/living-example.scss";
+@import "blocks/contacts.scss";
+@import "blocks/page-footer.scss";
+
+// page catalog-products
+@import "blocks/special-offer.scss";
+
+// page programm-selection
+
