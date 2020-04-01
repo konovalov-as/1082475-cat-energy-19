@@ -1,7 +1,7 @@
 // variables
 // base font styles
-$base-font-family: Oswald;
-$more-one-font-family: Arial;
+$base-font-family: "Oswald";
+$more-one-font-family: "Arial";
 $base-font-size: 16px;
 $base-line-height: normal;
 $base-color: black;
@@ -24,16 +24,14 @@ $bg-color-green-3: #71b645;
   font-family: $base-font-family;
   font-weight: $regular-font-weight;
   font-style: normal;
-  src: url("../fonts/oswaldregular.woff2") format("woff2")
-        url("../fonts/oswaldregular.woff") format("woff");
+  src: url("../fonts/oswaldregular.woff2") format("woff2"), url("../fonts/oswaldregular.woff") format("woff");
 }
 
 @font-face {
   font-family: $base-font-family;
   font-weight: $medium-font-weight;
   font-style: normal;
-  src: url("../fonts/oswaldmedium.woff2") format("woff2")
-        url("../fonts/oswaldmedium.woff") format("woff");
+  src: url("../fonts/oswaldmedium.woff2") format("woff2"), url("../fonts/oswaldmedium.woff") format("woff");
 }
 
 @import "blocks/body.scss";
