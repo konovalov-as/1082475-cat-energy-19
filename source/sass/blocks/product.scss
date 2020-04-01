@@ -1,3 +1,27 @@
 .product__item {
-  background-color: #f2f2f2;
+  background-color: $bg-color-white-1;
+  margin: 20px;
+  padding: 20px;
+}
+
+.product__title {
+  font-weight: $regular-font-weight;
+  font-size: 1.5em;
+  line-height: 1.54;
+  color: $color-black-1;
+  text-transform: uppercase;
+}
+
+.product__description {
+  font-family: $more-one-font-family;
+  font-size: 0.875em;
+  line-height: 1.29;
+  color: $color-grey-brown;
+}
+
+.product__button {
+  font-weight: $regular-font-weight;
+  line-height: 1;
+  color: $color-black-1;
+  text-transform: uppercase;
 }

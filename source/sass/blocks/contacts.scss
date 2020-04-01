@@ -1,7 +1,11 @@
 .contacts__block--bg {
-  background-color: #f2f2f2;
+  background-color: $bg-color-white-1;
 }
 
 .contacts__box-map {
-  background-color: #fdfaf2;
+  background-color: $bg-color-white-2;
+}
+
+.contacts__block{
+  margin: 0 20px;
 }

@@ -1,3 +1,7 @@
 .living-example {
-  background-color: #f2f2f2;
+  background-color: $bg-color-white-1;
+}
+
+.living-example__wrapper {
+  margin: 0 20px;
 }

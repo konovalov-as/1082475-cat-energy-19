@@ -1,0 +1,15 @@
+.button {
+  font-family: $base-font-family;
+  font-weight: $regular-font-weight;
+  font-size: $base-font-size;
+  line-height: 1.25;
+  text-align: center;
+  color: $color-white;
+  background-color: $bg-color-green-1;
+  text-transform: uppercase;
+}
+
+.button--fs14 {
+  font-size: 0.875em;
+  line-height: 1.285;
+}

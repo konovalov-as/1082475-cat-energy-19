@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="body">
   <header class="page-header">
     <a class="page-header__logo-link" href="index.html">
       <img class="page-header__logo-image" src="img/logo-mobile.svg" width="191" height="39"
@@ -16,15 +16,15 @@
     <nav class="main-nav">
       <button class="main-menu-toggle" type="button">Открыть меню</button>
       <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
+        <ul class="main-nav__list site-list list-reset">
           <li class="site-list__item site-list__item--active">
-            <a href="index.html">Главная</a>
+            <a class="site-list__link link-reset" href="index.html">Главная</a>
           </li>
           <li class="site-list__item">
-            <a href="catalog-products.html">Каталог продукции</a>
+            <a class="site-list__link link-reset" href="catalog-products.html">Каталог продукции</a>
           </li>
           <li class="site-list__item">
-            <a>Подбор программы</a>
+            <a class="site-list__link link-reset">Подбор программы</a>
           </li>
         </ul>
       </div>
@@ -32,50 +32,50 @@
   </header>
 
   <main class="page-main">
-    <h1 class="page-main__title">Подбор программы</h1>
+    <h1 class="page-main__title margin-reset">Подбор программы</h1>
 
     <section class="programm-selection">
       <div class="programm-selection__wrapper">
         <h2 class="visually-hidden">Анкета питомца</h2>
-        <p>Заполните анкету и мы подберем программу питания для вашего кота</p>
+        <p class="programm-selection__to-do margin-reset">Заполните анкету и мы подберем программу питания для вашего кота</p>
         <form class="programm-selection__form questionnaire" action="https://echo.htmlacademy.ru" method="post">
-          <fieldset class="questionnaire__fileset">
-            <ul class="questionnaire__list about-cat">
+          <fieldset class="questionnaire__fieldset fieldset-reset">
+            <ul class="questionnaire__list about-cat list-reset">
               <li class="questionnaire__item about-cat__item">
-                <label>Имя:*
-                  <input class="field-text" name="catName" type="text" placeholder="Барсик">
+                <label class="label-questionnaire">Имя:*
+                  <input class="field-value field-text" name="catName" type="text" placeholder="Барсик">
                 </label>
               </li>
               <li>
-                <label>Вес (кг):*
-                  <input class="field-text" name="catWeight" type="number" min="1" placeholder="7">
+                <label class="label-questionnaire">Вес (кг):*
+                  <input class="field-value field-text" name="catWeight" type="number" min="1" placeholder="7">
                 </label>
               </li>
               <li>
-                <label>Возраст (лет):
-                  <input class="field-text" name="catAge" type="number" min="1" placeholder="7">
+                <label class="label-questionnaire">Возраст (лет):
+                  <input class="field-value field-text" name="catAge" type="number" min="1" placeholder="7">
                 </label>
               </li>
             </ul>
           </fieldset>
-          <fieldset class="questionnaire__fileset">
-            <ul class="questionnaire__list">
+          <fieldset class="questionnaire__fieldset fieldset-reset">
+            <ul class="questionnaire__list list-reset">
               <li class="questionnaire__item advice">
-                <label>
+                <label class="label-questionnaire">
                   <input class="visually-hidden" name="advice" type="radio" value="slimming" checked>
                   <span class="field-radio"></span>
                   Похудение
                 </label>
               </li>
               <li class="questionnaire__item advice">
-                <label>
+                <label class="label-questionnaire">
                   <input class="visually-hidden" name="advice" type="radio" value="cat-mass-gain">
                   <span class="field-radio"></span>
                   Набор массы
                 </label>
               </li>
               <li class="questionnaire__item advice">
-                <label>
+                <label class="label-questionnaire">
                   <input class="visually-hidden" name="advice" type="radio" value="cat-need-advice">
                   <span class="field-radio"></span>
                   Не знаю (Нужен ваш совет)
@@ -83,52 +83,52 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="questionnaire__fileset">
+          <fieldset class="questionnaire__fieldset fieldset-reset">
             <legend class="questionnaire__legend">Контактные данные (владельца кота)</legend>
-            <ul class="questionnaire__list">
+            <ul class="questionnaire__list list-reset">
               <li class="questionnaire__item cat-owner">
-                <label>E-mail:*
-                  <input class="field-text" name="email" type="email" placeholder="kuklachev@gmail.com">
+                <label class="label-questionnaire">E-mail:*
+                  <input class="field-value field-text" name="email" type="email" placeholder="kuklachev@gmail.com">
                 </label>
               </li>
               <li class="questionnaire__item cat-owner">
-                <label>Телефон:*
-                  <input class="field-text" name="phone" type="tel" placeholder="8 (960) 900-60-90">
+                <label class="label-questionnaire">Телефон:*
+                  <input class="field-value field-text" name="phone" type="tel" placeholder="8 (960) 900-60-90">
                 </label>
               </li>
             </ul>
           </fieldset>
-          <fieldset class="questionnaire__fileset">
+          <fieldset class="questionnaire__fieldset fieldset-reset">
             <legend class="questionnaire__legend">Комментарий</legend>
-            <textarea class="field-textarea" name="aboutCat" cols="30" rows="10"
+            <textarea class="field-value field-textarea" name="aboutCat" cols="30" rows="10"
               placeholder="Расскажите обо всех повадках кота"></textarea>
           </fieldset>
-          <fieldset class="questionnaire__fileset">
+          <fieldset class="questionnaire__fieldset fieldset-reset">
             <legend class="questionnaire__legend">Дополнительно</legend>
-            <ul class="questionnaire__list">
+            <ul class="questionnaire__list list-reset">
               <li class="questionnaire__item additionally">
-                <label>
+                <label class="label-questionnaire">
                   <input class="visually-hidden" name="sweetener" type="checkbox" value="sweetener" checked>
                   <span class="field-checkbox"></span>
                   Сахарозаменитель
                 </label>
               </li>
               <li class="questionnaire__item additionally">
-                <label>
+                <label class="label-questionnaire">
                   <input class="visually-hidden" name="drinkingWater" type="checkbox" value="drinking-water">
                   <span class="field-checkbox"></span>
                   Питьевая вода
                 </label>
               </li>
               <li class="questionnaire__item additionally">
-                <label>
+                <label class="label-questionnaire">
                   <input class="visually-hidden" name="milk" type="checkbox" value="milk">
                   <span class="field-checkbox"></span>
                   Молоко
                 </label>
               </li>
               <li class="questionnaire__item additionally">
-                <label>
+                <label class="label-questionnaire">
                   <input class="visually-hidden" name="vitamins" type="checkbox" value="vitamins">
                   <span class="field-checkbox"></span>
                   Витамины
@@ -138,15 +138,15 @@
           </fieldset>
           <button class="questionnaire__send-request button" type="submit">Отправить заявку</button>
         </form>
-        <p class="programm-selection__required-fields">* — Обязательные поля</p>
+        <p class="programm-selection__required-fields margin-reset">* — Обязательные поля</p>
       </div>
     </section>
 
     <section class="contacts">
       <h2 class="visually-hidden">Нашни контакты</h2>
       <div class="contacts__block contacts__block--bg">
-        <p class="contacts__invite">приглашаем к сотрудничеству дилеров!</p>
-        <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        <p class="contacts__invite margin-reset">приглашаем к сотрудничеству дилеров!</p>
+        <p class="contacts__address margin-reset">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
       </div>
       <div class="contacts__box-map">
         <img class="contacts__map" src="img/bg-map-mobile@1x.png" width="320" height="400"
@@ -165,9 +165,9 @@
             alt="Интернет-магазин «Кэт энерджи»">
         </a>
         <div class="page-footer__social social">
-          <ul class="social__list">
+          <ul class="social__list list-reset">
             <li class="social__item">
-              <a class="social__link social__link--vkontakte" href="">
+              <a class="social__link social__link--vkontakte link-reset" href="">
                 <span class="visually-hidden">Мы в Вконтакте</span>
                 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                   xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="30" height="16" viewBox="0 0 22 12"
@@ -189,9 +189,9 @@
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--instagram" href="">
+              <a class="social__link social__link--instagram link-reset" href="">
                 <span class="visually-hidden">Мы в Instagram</span>
-                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                <svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg"
                   xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23" height="23"
                   viewBox="0 0 16.1 16" style="enable-background:new 0 0 16.1 16;" xml:space="preserve">
                   <path class="st0" fill="#666666"
@@ -203,9 +203,9 @@
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--facebook" href="">
+              <a class="social__link social__link--facebook link-reset" href="">
                 <span class="visually-hidden">Мы в Facebook</span>
-                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                <svg version="1.1" id="Layer_3" xmlns="http://www.w3.org/2000/svg"
                   xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14" height="28" viewBox="0 0 10 19"
                   style="enable-background:new 0 0 10 19;" xml:space="preserve">
                   <path fill="#666666"
@@ -216,8 +216,8 @@
           </ul>
         </div>
         <div class="page-footer__copyright copyright">
-          <p class="copyright__text">HTML Academy</p>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <p class="copyright__text margin-reset">HTML Academy</p>
+          <a class="copyright__link link-reset" href="https://htmlacademy.ru/intensive/adaptive">
             <span class="visually-hidden">Разработано HTML Academy</span>
             <svg xmlns="http://www.w3.org/2000/svg" width="27" height="34" viewBox="0 0 60 60">
               <path fill="#666666"
