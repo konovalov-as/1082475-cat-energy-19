@@ -4,23 +4,23 @@
 
 .food-for-cat__wrapper {
   background-color: $bg-color-green-2;
-  background-image: url("../../img/index-background-mobile@1x.jpg");
+  background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .food-for-cat__header {
-  font-weight: $regular-font-weight;
-  font-size: 2.25em;
-  line-height: 1;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
   text-align: center;
   color: $color-white;
 }
 
 .food-for-cat__slogan {
-  font-weight: $regular-font-weight;
-  font-size: 0.875em;
-  line-height: 1;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
   text-align: center;
   color: $color-white;
 }

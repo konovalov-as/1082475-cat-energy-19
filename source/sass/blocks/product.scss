@@ -5,23 +5,23 @@
 }
 
 .product__title {
-  font-weight: $regular-font-weight;
-  font-size: 1.5em;
-  line-height: 1.54;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 37px;
   color: $color-black-1;
   text-transform: uppercase;
 }
 
 .product__description {
   font-family: $more-one-font-family;
-  font-size: 0.875em;
-  line-height: 1.29;
+  font-size: 14px;
+  line-height: 18px;
   color: $color-grey-brown;
 }
 
 .product__button {
-  font-weight: $regular-font-weight;
-  line-height: 1;
+  font-weight: 400;
+  line-height: 16px;
   color: $color-black-1;
   text-transform: uppercase;
 }

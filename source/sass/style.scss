@@ -1,12 +1,9 @@
 // variables
 // base font styles
-$base-font-family: "Oswald";
-$more-one-font-family: "Arial";
-$base-font-size: 16px;
+$base-font-family: "Oswald", "Arial", sans-serif;
+$more-one-font-family: "Arial", sans-serif;
 $base-line-height: normal;
 $base-color: black;
-$regular-font-weight: 400;
-$medium-font-weight: 500;
 
 // colors
 $color-black-1: #111111;
@@ -19,21 +16,9 @@ $bg-color-green-1: #68b738;
 $bg-color-green-2: #65ab39;
 $bg-color-green-3: #71b645;
 
-/* Link fonts */
-@font-face {
-  font-family: $base-font-family;
-  font-weight: $regular-font-weight;
-  font-style: normal;
-  src: url("../fonts/oswaldregular.woff2") format("woff2"), url("../fonts/oswaldregular.woff") format("woff");
-}
-
-@font-face {
-  font-family: $base-font-family;
-  font-weight: $medium-font-weight;
-  font-style: normal;
-  src: url("../fonts/oswaldmedium.woff2") format("woff2"), url("../fonts/oswaldmedium.woff") format("woff");
-}
-
+@import "blocks/normalize.scss";
+@import "blocks/global.scss";
+@import "blocks/fonts.scss";
 @import "blocks/body.scss";
 
 // general styles
@@ -41,7 +26,6 @@ $bg-color-green-3: #71b645;
 @import "blocks/link-reset.scss";
 @import "blocks/margin-reset.scss";
 @import "blocks/fieldset-reset.scss";
-
 
 // header styles
 @import "blocks/site-list.scss";

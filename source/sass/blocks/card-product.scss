@@ -1,13 +1,13 @@
 .card-product__link {
-  font-weight: $regular-font-weight;
-  line-height: 1.25;
+  font-weight: 400;
+  line-height: 20px;
   color: $color-black-1;
   text-transform: uppercase;
 }
 
 .card-product__description {
   font-family: $more-one-font-family;
-  font-size: 0.75em;
-  line-height: 1.33;
+  font-size: 12px;
+  line-height: 16px;
   color: $color-grey-brown;
 }
