@@ -1,3 +1,33 @@
 .additional-goods {
   margin: 0 20px;
 }
+
+.additional-goods__title {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  color: $color-black-1;
+}
+
+.additional-card-product__title {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: $color-black-2;
+  text-transform: uppercase;
+}
+
+.additional-card-product__unit {
+  font-family: $more-one-font-family;
+  font-size: 14px;
+  line-height: 14px;
+  color: $color-grey-brown;
+}
+
+.additional-card-product__price {
+  font-family: $more-one-font-family;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: right;
+  color: $color-grey-brown;
+}
