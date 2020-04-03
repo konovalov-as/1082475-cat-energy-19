@@ -1,0 +1,19 @@
+.programm-selection {
+  margin: 0 20px;
+}
+
+.programm-selection__to-do {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: $color-black-1;
+  text-transform: uppercase;
+}
+
+.programm-selection__required-fields {
+  font-family: $more-one-font-family;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  color: $color-grey-brown;
+}
