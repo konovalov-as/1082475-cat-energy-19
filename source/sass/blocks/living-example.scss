@@ -5,3 +5,42 @@
 .living-example__wrapper {
   margin: 0 20px;
 }
+
+.living-example__title {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 60px;
+  color: $color-black-1;
+}
+
+.living-example__description {
+  font-family: $more-one-font-family;
+  font-size: 14px;
+  line-height: 18px;
+  color: $color-grey-brown;
+}
+
+.characteristic__value {
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  color: $color-black-1;
+  text-transform: uppercase;
+}
+
+.characteristic__label {
+  font-family: $more-one-font-family;
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+  color: $color-grey-brown;
+  text-transform: lowercase;
+}
+
+.living-example__costs-value {
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: $color-black-1;
+  text-transform: uppercase;
+}
