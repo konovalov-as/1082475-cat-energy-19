@@ -1,12 +1,10 @@
-.food-for-cat {
-  margin: 20px;
-}
-
 .food-for-cat__wrapper {
   background-color: $bg-color-green-2;
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center;
+  margin-bottom: 10px;
+  padding-top: 20px;
 }
 
 .food-for-cat__header {
@@ -15,6 +13,7 @@
   line-height: 36px;
   text-align: center;
   color: $color-white;
+  margin-bottom: 20px;
 }
 
 .food-for-cat__slogan {
@@ -23,9 +22,20 @@
   line-height: 14px;
   text-align: center;
   color: $color-white;
+  margin-bottom: 20px;
 }
 
 .food-for-cat__box-image {
   width: 280px;
   height: 270px;
+  margin: 0 auto;
+}
+
+.food-for-cat__to-selection-programm {
+  display: block;
+  margin: 0 auto;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }

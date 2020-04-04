@@ -1,10 +1,20 @@
 .page-footer {
   background-color: $bg-color-white-1;
-  margin: 0 20px;
+  padding: 0 20px;
+}
+
+.page-footer__wrapper {
+  padding-top: 20px;
 }
 
 .page-footer__logo-image {
   display: block;
   width: 128px;
   height: 24px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.page-footer__social {
+  margin-bottom: 20px;
 }
