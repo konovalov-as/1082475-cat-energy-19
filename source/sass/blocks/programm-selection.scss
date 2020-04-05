@@ -8,12 +8,16 @@
   line-height: 18px;
   color: $color-black-1;
   text-transform: uppercase;
+  max-width: 230px;
+  margin-bottom: 20px;
 }
 
 .programm-selection__required-fields {
+  display: block;
   font-family: $more-one-font-family;
   font-size: 14px;
   line-height: 16px;
   text-align: center;
   color: $color-grey-brown;
+  margin-bottom: 20px;
 }

@@ -1,10 +1,22 @@
+.questionnaire__fieldset {
+  margin-bottom: 20px;
+  border: 0;
+}
+
 .questionnaire__legend {
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
   color: $color-black-1;
+  margin-bottom: 20px;
 }
 
 .questionnaire__send-request {
+  vertical-align: top;
+  width: 100%;
+  border: none;
+  margin-bottom: 20px;
   padding: 0;
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
