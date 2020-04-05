@@ -1,5 +1,8 @@
 .special-offer {
-  margin: 0 20px;
+  margin-top: 0;
+  margin-bottom: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .special-offer__wrapper {
@@ -7,6 +10,8 @@
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center;
+  max-width: 280px;
+  min-height: 289px;
 }
 
 .special-offer__present-text {
@@ -14,4 +19,7 @@
   line-height: 20px;
   text-align: center;
   color: $color-white;
+  max-width: 160px;
+  margin: 0 auto;
+  padding-top: 190px;
 }

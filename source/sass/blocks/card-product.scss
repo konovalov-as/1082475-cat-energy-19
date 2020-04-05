@@ -1,3 +1,13 @@
+.card-product__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+.card-product__title {
+  order: 1;
+}
+
 .card-product__link {
   font-weight: 400;
   font-size: 16px;
@@ -6,15 +16,22 @@
   text-transform: uppercase;
 }
 
-.card-product__description {
-  font-family: $more-one-font-family;
-  font-size: 12px;
-  line-height: 16px;
-  color: $color-grey-brown;
+.card-product__link-image {
+  flex-shrink: 0;
 }
 
 .card-product__image {
   display: block;
   width: 140px;
   height: 144px;
+}
+
+.card-product__description {
+  font-family: $more-one-font-family;
+  font-size: 12px;
+  line-height: 16px;
+  color: $color-grey-brown;
+  order: 2;
+  margin-left: auto;
+  width: 150px;
 }

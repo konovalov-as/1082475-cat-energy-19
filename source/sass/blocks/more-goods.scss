@@ -8,6 +8,8 @@
   text-align: center;
   color: $color-black-1;
   text-transform: uppercase;
+  margin-top: 100px;
+  margin-bottom: 10px;
 }
 
 .more-goods__taste {
@@ -16,6 +18,7 @@
   line-height: 16px;
   text-align: center;
   color: $color-grey-brown;
+  margin-bottom: 20px;
 }
 
 .more-goods__show-all {
@@ -25,4 +28,8 @@
   color: $color-grey-brown;
   background-color: $bg-color-white-1;
   text-transform: uppercase;
+  display: block;
+  margin-bottom: 25px;
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
