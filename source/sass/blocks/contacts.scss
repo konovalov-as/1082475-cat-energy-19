@@ -5,6 +5,7 @@
 .contacts__block {
   padding: 20px 20px;
   display: flex;
+  justify-content: space-between;
 }
 
 .contacts__invite {
@@ -24,4 +25,36 @@
   background-color: $bg-color-white-2;
   width: 320px;
   height: 400px;
+}
+
+@media (min-width: $table-width) {
+  .contacts__block {
+    margin-bottom: 50px;
+  }
+
+  .contacts__invite {
+    font-size: 20px;
+    line-height: 25px;
+    flex-basis: 154px;
+  }
+
+  .contacts__address {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+    flex-basis: 154px;
+  }
+
+  .contacts__map {
+    background-image: url("../img/bg-map-tablet@1x.png");
+    background-repeat: no-repeat;
+    width: 0;
+    height: 400px;
+    padding-left: 767px;
+  }
+
+  .contacts__box-map {
+    width: 767px;
+    height: 400px;
+  }
 }

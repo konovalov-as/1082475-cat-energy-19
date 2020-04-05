@@ -41,8 +41,73 @@
 .living-example__box-photo {
   width: 311px;
   height: 232px;
+  padding-bottom: 30px;
 }
 
 .living-example__toggles {
+  display: flex;
+  justify-content: space-around;
   padding-bottom: 30px;
+}
+
+@media (min-width: $table-width) {
+  .living-example {
+    background-color: transparent;
+    border-top: 1px solid $bg-color-white-3;
+  }
+
+  .living-example__wrapper {
+    margin-bottom: 50px;
+  }
+
+  .living-example__title {
+    font-size: 60px;
+    line-height: 60px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+  }
+
+  .living-example__description {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 40px;
+  }
+
+  .living-example__inner {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 70px;
+  }
+
+  .living-example__costs {
+    max-width: 180px;
+    width: 100%;
+    text-align: right;
+  }
+
+  .living-example__costs-value {
+    font-size: 20px;
+  }
+
+  .living-example__box-photo {
+    width: auto;
+    height: auto;
+    background-image: linear-gradient(to bottom, transparent 169px, $bg-color-white-1 -169px);
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+
+  .living-example__photo {
+    background-image: url("../img/before-tablet@1x.png");
+    background-repeat: no-repeat;
+    width: 0;
+    height: 517px;
+    padding-left: 690px;
+  }
+
+  .living-example__toggles {
+    background-color: $bg-color-white-1;
+    margin-left: -20px;
+    margin-right: -20px;
+  }
 }

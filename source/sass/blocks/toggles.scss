@@ -1,0 +1,25 @@
+.toggles__prev {
+  line-height: 20px;
+  text-transform: uppercase;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.toggles__next {
+  line-height: 20px;
+  text-transform: uppercase;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+@media (min-width: $table-width) {
+  .toggles__prev {
+    font-size: 20px;
+  }
+
+  .toggles__next {
+    font-size: 20px;
+  }
+}

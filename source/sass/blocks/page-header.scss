@@ -15,3 +15,27 @@
   width: 191px;
   height: 39px;
 }
+
+@media (min-width: $table-width) {
+  .page-header {
+    display: flex;
+  }
+
+  .page-header__logo-image {
+    background-image: url("../img/logo-tablet.svg");
+    background-repeat: no-repeat;
+    width: 0;
+    height: 59px;
+    padding-left: 174px;
+  }
+}
+
+@media (min-width: $table-width) {
+  .page-header {
+    margin-top: 15px;
+  }
+
+  .page-header__logo-link {
+    margin-top: 0;
+  }
+}

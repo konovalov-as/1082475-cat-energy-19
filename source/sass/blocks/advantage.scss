@@ -20,3 +20,24 @@
   line-height: 18px;
   color: $color-grey-brown;
 }
+
+@media (min-width: $table-width) {
+  .advantage__title {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 60px;
+  }
+
+  .advantage__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .advantage__item {
+    flex-basis: 235px;
+  }
+
+  .advantage__item:nth-child(odd) {
+    margin-right: 160px;
+  }
+}

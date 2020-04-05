@@ -10,6 +10,7 @@
   line-height: 37px;
   color: $color-black-1;
   text-transform: uppercase;
+  margin-bottom: 30px;
 }
 
 .product__description {
@@ -17,6 +18,7 @@
   font-size: 14px;
   line-height: 18px;
   color: $color-grey-brown;
+  margin-bottom: 30px;
 }
 
 .product__button {
@@ -24,4 +26,21 @@
   line-height: 16px;
   color: $color-black-1;
   text-transform: uppercase;
+}
+
+@media (min-width: $table-width) {
+  .product__title {
+    font-size: 36px;
+  }
+
+  .product__description {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 60px;
+  }
+
+  .product__button {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }

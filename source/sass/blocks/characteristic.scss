@@ -14,3 +14,15 @@
   color: $color-grey-brown;
   text-transform: lowercase;
 }
+
+@media (min-width: $table-width) {
+  .characteristic__value {
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .characteristic__label {
+    font-size: 14px;
+    line-height: 14px;
+  }
+}
