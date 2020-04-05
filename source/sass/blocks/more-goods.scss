@@ -33,3 +33,20 @@
   padding-top: 12px;
   padding-bottom: 12px;
 }
+
+@media (min-width: $table-width) {
+  .more-goods {
+    margin: 0 30px;
+  }
+
+  .more-goods__wrapper {
+    max-width: 324px;
+    min-height: 432px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .more-goods__label {
+    margin-top: 0;
+  }
+}

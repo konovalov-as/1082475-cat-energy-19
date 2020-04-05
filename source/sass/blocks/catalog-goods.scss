@@ -1,3 +1,9 @@
 .catalog-goods {
   margin: 0 20px;
 }
+
+@media (min-width: $table-width) {
+  .catalog-goods {
+    margin: 0 30px;
+  }
+}

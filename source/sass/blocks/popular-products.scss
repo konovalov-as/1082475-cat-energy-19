@@ -1,0 +1,11 @@
+.popular-products__wrapper {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+@media (min-width: $table-width) {
+  .popular-products__wrapper {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+}

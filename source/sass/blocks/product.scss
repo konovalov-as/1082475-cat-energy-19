@@ -1,6 +1,6 @@
 .product__item {
   background-color: $bg-color-white-1;
-  margin: 20px;
+  margin-bottom: 20px;
   padding: 20px;
 }
 
@@ -29,6 +29,10 @@
 }
 
 @media (min-width: $table-width) {
+  .product__item {
+    margin-bottom: 30px;
+  }
+
   .product__title {
     font-size: 36px;
   }

@@ -30,6 +30,12 @@
 }
 
 @media (min-width: $table-width) {
+  .page-footer {
+    background-color: $bg-color-white-1;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
   .page-footer__wrapper {
     display: flex;
     justify-content: space-between;

@@ -8,3 +8,29 @@
   padding-top: 12px;
   padding-bottom: 12px;
 }
+
+@media (min-width: $table-width) {
+  .list-goods {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .list-goods__item {
+    max-width: 324px;
+    margin-right: 60px;
+    border-top: none;
+    background-color: $bg-color-white-1;
+    margin-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .list-goods__item:nth-child(even) {
+    margin-right: 0;
+  }
+
+  .list-goods__to-order {
+    margin-top: 30px;
+    margin-bottom: 40px;
+  }
+}

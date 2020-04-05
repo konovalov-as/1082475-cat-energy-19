@@ -34,7 +34,7 @@
 
 .food-for-cat__to-selection-programm {
   display: block;
-  margin: 0 auto;
+  margin-bottom: 20px;
   margin-left: 20px;
   margin-right: 20px;
   padding-top: 10px;
@@ -78,10 +78,12 @@
   }
 
   .food-for-cat__image {
+    display: block;
     background-image: url("../img/index-can-tablet@1x.jpg");
     background-repeat: no-repeat;
     width: 0;
     height: 609px;
+    margin: 0 auto;
     padding-left: 709px;
   }
 

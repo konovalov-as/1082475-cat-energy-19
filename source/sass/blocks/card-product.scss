@@ -35,3 +35,33 @@
   margin-left: auto;
   width: 150px;
 }
+
+@media (min-width: $table-width) {
+  .card-product__title {
+    flex-basis: 124px;
+  }
+
+  .card-product__link {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .card-product__image {
+    background-image: url("../img/chicken-small-tablet@1x.png");
+    background-repeat: no-repeat;
+    width: 0;
+    height: 172px;
+    margin-bottom: 30px;
+    padding-left: 324px;
+  }
+
+  .card-product__description {
+    font-size: 16px;
+  }
+
+  .card-product__row {
+    border-bottom: 1px solid $bg-color-white-3;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+}

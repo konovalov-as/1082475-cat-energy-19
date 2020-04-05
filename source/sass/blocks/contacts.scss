@@ -29,7 +29,10 @@
 
 @media (min-width: $table-width) {
   .contacts__block {
-    margin-bottom: 50px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
   .contacts__invite {
