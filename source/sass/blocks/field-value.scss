@@ -1,9 +1,14 @@
 .field-value {
-  font-family: $base-font-family;
-  font-weight: 400;
-  font-size: 16px;
   line-height: 18px;
   color: $color-grey-brown;
   text-transform: uppercase;
   margin-bottom: 10px;
+}
+
+@media (min-width: $table-width) {
+  .field-value {
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 20px;
+  }
 }

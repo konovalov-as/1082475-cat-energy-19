@@ -20,3 +20,39 @@
   padding-top: 12px;
   padding-bottom: 12px;
 }
+
+.questionnaire__required-fields {
+  display: block;
+  font-family: $more-one-font-family;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  color: $color-grey-brown;
+}
+
+@media (min-width: $table-width) {
+  .questionnaire__fieldset {
+    margin-bottom: 50px;
+  }
+
+  .questionnaire__legend {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 50px;
+  }
+
+  .questionnaire__wrapper {
+    display: flex;
+  }
+
+  .questionnaire__send-request {
+    flex-basis: 283px;
+    font-size: 20px;
+    margin-right: 50px;
+    margin-bottom: 0;
+  }
+
+  .questionnaire__required-fields {
+    font-size: 16px;
+  }
+}

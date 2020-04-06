@@ -59,7 +59,13 @@
     font-size: 16px;
   }
 
-  .card-product__row {
+  .card-product__value {
+    border-bottom: 1px solid $bg-color-white-3;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+
+  .card-product__field {
     border-bottom: 1px solid $bg-color-white-3;
     padding-top: 8px;
     padding-bottom: 8px;

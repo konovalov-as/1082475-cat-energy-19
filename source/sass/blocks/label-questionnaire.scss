@@ -4,3 +4,10 @@
   color: $color-black-2;
   text-transform: uppercase;
 }
+
+@media (min-width: $table-width) {
+  .label-questionnaire {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}

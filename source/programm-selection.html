@@ -52,12 +52,12 @@
                       <input class="field-value field-text" name="catName" type="text" placeholder="Барсик">
                     </label>
                   </li>
-                  <li>
+                  <li class="questionnaire__item about-cat__item">
                     <label class="label-questionnaire">Вес (кг):*
                       <input class="field-value field-text" name="catWeight" type="number" min="1" placeholder="7">
                     </label>
                   </li>
-                  <li>
+                  <li class="questionnaire__item about-cat__item">
                     <label class="label-questionnaire">Возраст (лет):
                       <input class="field-value field-text" name="catAge" type="number" min="1" placeholder="7">
                     </label>
@@ -158,9 +158,11 @@
                   </li>
                 </ul>
               </fieldset>
-              <button class="questionnaire__send-request button" type="submit">Отправить заявку</button>
+              <div class="questionnaire__wrapper">
+                <button class="questionnaire__send-request button" type="submit">Отправить заявку</button>
+                <small class="questionnaire__required-fields">* — Обязательные поля</small>
+              </div>
             </form>
-            <small class="programm-selection__required-fields">* — Обязательные поля</small>
           </div>
         </section>
       </div>
