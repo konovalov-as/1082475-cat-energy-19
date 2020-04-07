@@ -102,12 +102,19 @@
 
 @media (min-width: $desktop-width) {
   .food-for-cat__wrapper {
+    display: flex;
     background-color: $bg-color-green-2;
     background-image: url("../img/index-background-desktop@1x.jpg");
     background-repeat: no-repeat;
     background-position: center;
+    width: 720px;
     height: 609px;
+    margin-left: auto;
     padding-top: 20px;
+    position: relative;
+    top: -85px;
+    right: 0;
+    z-index: -1;
   }
 
   .food-for-cat__image {
