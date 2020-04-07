@@ -45,3 +45,14 @@
     border-bottom: none;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .container {
+    width: auto;
+  }
+
+  .page-footer {
+    padding-left: 55px;
+    padding-right: 55px;
+  }
+}

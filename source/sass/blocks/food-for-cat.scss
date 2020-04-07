@@ -81,6 +81,7 @@
     display: block;
     background-image: url("../img/index-can-tablet@1x.jpg");
     background-repeat: no-repeat;
+    background-position: center;
     width: 0;
     height: 609px;
     margin: 0 auto;
@@ -96,5 +97,22 @@
     margin: 0;
     padding-left: 25px;
     padding-right: 25px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .food-for-cat__wrapper {
+    background-color: $bg-color-green-2;
+    background-image: url("../img/index-background-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 609px;
+    padding-top: 20px;
+  }
+
+  .food-for-cat__image {
+    background-image: url("../img/index-can-desktop@1x.png");
+    height: 696px;
+    padding-left: 720px;
   }
 }

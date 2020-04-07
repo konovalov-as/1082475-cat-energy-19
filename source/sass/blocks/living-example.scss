@@ -102,10 +102,12 @@
   }
 
   .living-example__photo {
+    display: block;
     background-image: url("../img/before-tablet@1x.png");
     background-repeat: no-repeat;
     width: 0;
     height: 517px;
+    margin: 0 auto;
     padding-left: 690px;
   }
 
@@ -113,5 +115,21 @@
     background-color: $bg-color-white-1;
     margin-left: -20px;
     margin-right: -20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .living-example {
+    border-top: none;
+  }
+
+  .living-example__wrapper {
+    margin-bottom: 0;
+    margin-left: 55px;
+    margin-right: 55px;
+  }
+
+  .living-example__photo {
+    background-image: url("../img/before-desktop@1x.png");
   }
 }

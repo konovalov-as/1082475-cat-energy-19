@@ -39,3 +39,15 @@
     margin-top: 0;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .container {
+    width: auto;
+  }
+
+  .page-header {
+    margin-left: 55px;
+    margin-right: 55px;
+    justify-content: space-between;
+  }
+}

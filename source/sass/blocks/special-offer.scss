@@ -36,3 +36,16 @@
     min-height: 200px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .special-offer {
+    margin-bottom: 0;
+    margin-left: 55px;
+    margin-right: 55px;
+  }
+
+  .special-offer__wrapper {
+    width: 245px;
+    min-height: 289px;
+  }
+}

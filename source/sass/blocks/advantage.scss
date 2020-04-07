@@ -47,4 +47,26 @@
   .advantage__item:nth-child(odd) {
     margin-right: 160px;
   }
+
+  .advantage__description {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantage__wrapper {
+    margin-left: 55px;
+    margin-right: 55px;
+    margin-bottom: 40px;
+  }
+
+  .advantage__list {
+    justify-content: space-between;
+  }
+
+  .advantage__item:nth-child(odd) {
+    margin-right: 0;
+    justify-content: space-between;
+  }
 }

@@ -9,3 +9,14 @@
     margin-right: 30px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .popular-products__wrapper {
+    margin-left: 55px;
+    margin-right: 55px;
+  }
+
+  .popular-products__list {
+    display: flex;
+  }
+}
