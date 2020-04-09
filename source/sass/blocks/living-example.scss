@@ -48,10 +48,10 @@
   text-transform: uppercase;
 }
 
-.living-example__box-photo {
+.living-example__photo {
+  display: block;
   width: 311px;
   height: 232px;
-  padding-bottom: 30px;
 }
 
 .living-example__toggles {
@@ -102,21 +102,12 @@
   }
 
   .living-example__box-photo {
-    width: auto;
-    height: auto;
     background-image: linear-gradient(to bottom, transparent 169px, $bg-color-white-1 -169px);
-    margin-left: -20px;
-    margin-right: -20px;
   }
 
   .living-example__photo {
-    display: block;
-    background-image: url("../img/before-tablet@1x.png");
-    background-repeat: no-repeat;
-    width: 0;
+    width: 690px;
     height: 517px;
-    margin: 0 auto;
-    padding-left: 690px;
   }
 
   .living-example__toggles {
@@ -135,9 +126,5 @@
     margin-bottom: 0;
     margin-left: 40px;
     margin-right: 40px;
-  }
-
-  .living-example__photo {
-    background-image: url("../img/before-desktop@1x.png");
   }
 }

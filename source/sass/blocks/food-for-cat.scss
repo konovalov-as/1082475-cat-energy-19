@@ -28,7 +28,8 @@
   margin-bottom: 20px;
 }
 
-.food-for-cat__box-image {
+.food-for-cat__image {
+  display: block;
   width: 280px;
   height: 270px;
   margin: 0 auto;
@@ -74,21 +75,9 @@
     margin-left: 110px;
   }
 
-  .food-for-cat__box-image {
-    width: auto;
-    height: auto;
-    margin: auto;
-  }
-
   .food-for-cat__image {
-    display: block;
-    background-image: url("../img/index-can-tablet@1x.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 0;
+    width: 709px;
     height: 609px;
-    margin: 0 auto;
-    padding-left: 709px;
   }
 
   .food-for-cat__to-selection-programm {
@@ -121,8 +110,7 @@
   }
 
   .food-for-cat__image {
-    background-image: url("../img/index-can-desktop@1x.png");
-    height: 696px;
-    padding-left: 720px;
+    width: 552px;
+    height: 499px;
   }
 }

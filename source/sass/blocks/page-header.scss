@@ -19,24 +19,16 @@
 @media (min-width: $table-width) {
   .page-header {
     display: flex;
-  }
-
-  .page-header__logo-image {
-    background-image: url("../img/logo-tablet.svg");
-    background-repeat: no-repeat;
-    width: 0;
-    height: 59px;
-    padding-left: 174px;
-  }
-}
-
-@media (min-width: $table-width) {
-  .page-header {
     margin-top: 15px;
   }
 
   .page-header__logo-link {
     margin-top: 0;
+  }
+
+  .page-header__logo-image {
+    width: 174px;
+    height: 59px;
   }
 }
 
@@ -49,5 +41,10 @@
     margin-left: 40px;
     margin-right: 40px;
     justify-content: space-between;
+  }
+
+  .page-header__logo-image {
+    width: 203px;
+    height: 60px;
   }
 }

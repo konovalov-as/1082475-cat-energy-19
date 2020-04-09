@@ -26,7 +26,7 @@
 .contacts__box-map {
   background-color: $bg-color-white-2;
   width: auto;
-  height: 400px;
+  min-height: 400px;
 }
 
 @media (min-width: $table-width) {
@@ -49,14 +49,6 @@
     text-align: right;
     flex-basis: 154px;
   }
-
-  .contacts__map {
-    background-image: url("../img/bg-map-tablet@1x.png");
-    background-repeat: no-repeat;
-    width: 0;
-    height: 400px;
-    padding-left: 767px;
-  }
 }
 
 @media (min-width: $desktop-width) {
@@ -78,10 +70,5 @@
     padding-bottom: 55px;
     padding-left: 40px;
     padding-right: 40px;
-  }
-
-  .contacts__map {
-    background-image: url("../img/bg-map-desktop@1x.png");
-    padding-left: 1440px;
   }
 }
