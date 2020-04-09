@@ -14,8 +14,9 @@
   font-size: 20px;
   line-height: 20px;
   text-align: center;
-  color: $color-black-1;
+  text-decoration: none;
   text-transform: uppercase;
+  color: $color-black-1;
 }
 
 @media (min-width: $table-width) {

@@ -22,10 +22,10 @@
 }
 
 .product__button {
-  font-weight: 400;
   line-height: 16px;
   color: $color-black-1;
   text-transform: uppercase;
+  text-decoration: none;
 }
 
 @media (min-width: $table-width) {

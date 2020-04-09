@@ -9,6 +9,11 @@
   color: $color-grey-brown;
 }
 
+.copyright__link {
+  text-decoration: none;
+  color: #666666;
+}
+
 @media (min-width: $table-width) {
   .copyright__text {
     text-align: right;

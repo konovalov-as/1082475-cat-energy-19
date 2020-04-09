@@ -14,10 +14,13 @@
   line-height: 20px;
   color: $color-black-1;
   text-transform: uppercase;
+  text-decoration: none;
 }
 
 .card-product__link-image {
   flex-shrink: 0;
+  text-decoration: none;
+  color: $color-black-1;
 }
 
 .card-product__image {

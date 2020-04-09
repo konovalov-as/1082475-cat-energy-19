@@ -5,6 +5,11 @@
   margin-right: 20px;
 }
 
+.special-offer__link {
+  text-decoration: none;
+  color: $color-white;
+}
+
 .special-offer__wrapper {
   background-color: $bg-color-green-3;
   background-image: url("../img/gift-photo-mobile@1x.jpg");
