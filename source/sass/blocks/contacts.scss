@@ -29,6 +29,11 @@
   min-height: 400px;
 }
 
+.contacts__map {
+  display: block;
+  width: auto;
+}
+
 @media (min-width: $table-width) {
   .contacts__block {
     padding-top: 50px;
