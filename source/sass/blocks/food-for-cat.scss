@@ -63,7 +63,7 @@
     line-height: 60px;
     text-align: left;
     color: $color-black-1;
-    margin-left: 110px;
+    margin-left: 90px;
     margin-bottom: 30px;
   }
 
@@ -72,7 +72,7 @@
     line-height: 20px;
     text-align: left;
     color: $color-black-1;
-    margin-left: 110px;
+    margin-left: 90px;
   }
 
   .food-for-cat__image {
@@ -84,8 +84,8 @@
     font-size: 20px;
     line-height: 20px;
     position: absolute;
-    top: 230px;
-    left: 110px;
+    top: 28%;
+    left: 11.8%;
     margin: 0;
     padding-left: 25px;
     padding-right: 25px;
@@ -95,22 +95,37 @@
 @media (min-width: $desktop-width) {
   .food-for-cat__wrapper {
     display: flex;
-    background-color: $bg-color-green-2;
-    background-image: url("../img/index-background-desktop@1x.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 720px;
-    height: 609px;
-    margin-left: auto;
-    padding-top: 20px;
     position: relative;
-    top: -85px;
-    right: 0;
-    z-index: -1;
+    min-height: 612px;
+    margin-bottom: 80px;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 50%;
+      height: 696px;
+      background-color: $bg-color-green-2;
+      background-image: url("../img/index-background-desktop@1x.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      position: absolute;
+      top: -85px;
+      right: 0;
+      z-index: -1;
+    }
+  }
+
+  .food-for-cat__header {
+    margin-top: 70px;
   }
 
   .food-for-cat__image {
     width: 552px;
     height: 499px;
+  }
+
+  .food-for-cat__to-selection-programm {
+    top: 51%;
+    left: 7.2%;
   }
 }
