@@ -1,9 +1,3 @@
-.questionnaire__list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
 .questionnaire__fieldset {
   padding: 0;
   margin-bottom: 20px;
@@ -16,6 +10,19 @@
   line-height: 24px;
   color: $color-black-1;
   margin-bottom: 20px;
+}
+
+.questionnaire__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.questionnaire__label {
+  font-weight: 400;
+  line-height: 18px;
+  color: $color-black-2;
+  text-transform: uppercase;
 }
 
 .questionnaire__send-request {
@@ -46,6 +53,11 @@
     font-size: 36px;
     line-height: 36px;
     margin-bottom: 50px;
+  }
+
+  .questionnaire__label {
+    font-size: 20px;
+    line-height: 20px;
   }
 
   .questionnaire__wrapper {
