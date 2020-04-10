@@ -1,6 +1,6 @@
 .product__item {
   background-color: $bg-color-white-1;
-  margin: 20px;
+  margin-bottom: 20px;
   padding: 20px;
 }
 
@@ -10,6 +10,8 @@
   line-height: 37px;
   color: $color-black-1;
   text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 30px;
 }
 
 .product__description {
@@ -17,11 +19,44 @@
   font-size: 14px;
   line-height: 18px;
   color: $color-grey-brown;
+  margin: 0;
+  margin-bottom: 30px;
 }
 
 .product__button {
-  font-weight: 400;
   line-height: 16px;
   color: $color-black-1;
   text-transform: uppercase;
+  text-decoration: none;
+}
+
+@media (min-width: $table-width) {
+  .product__item {
+    margin-bottom: 30px;
+  }
+
+  .product__title {
+    font-size: 36px;
+  }
+
+  .product__description {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 60px;
+  }
+
+  .product__button {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .product__item {
+    flex-basis: 570px;
+  }
+
+  .product__item:nth-child(odd) {
+    margin-right: 70px;
+  }
 }

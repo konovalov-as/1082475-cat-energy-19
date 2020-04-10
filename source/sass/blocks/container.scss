@@ -1,0 +1,16 @@
+.container {
+  width: auto;
+  margin: 0 auto;
+}
+
+@media (min-width: $table-width) {
+  .container {
+    width: auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .container {
+    width: auto;
+  }
+}

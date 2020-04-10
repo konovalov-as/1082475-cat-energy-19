@@ -1,5 +1,13 @@
 .special-offer {
-  margin: 0 20px;
+  margin-top: 0;
+  margin-bottom: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.special-offer__link {
+  text-decoration: none;
+  color: $color-white;
 }
 
 .special-offer__wrapper {
@@ -7,6 +15,8 @@
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center;
+  max-width: 280px;
+  min-height: 289px;
 }
 
 .special-offer__present-text {
@@ -14,4 +24,33 @@
   line-height: 20px;
   text-align: center;
   color: $color-white;
+  max-width: 160px;
+  margin: 0 auto;
+  padding-top: 190px;
+}
+
+@media (min-width: $table-width) {
+  .special-offer {
+    margin-bottom: 50px;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  .special-offer__wrapper {
+    max-width: 100%;
+    min-height: 200px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .special-offer {
+    margin-bottom: 0;
+    margin-left: 55px;
+    margin-right: 55px;
+  }
+
+  .special-offer__wrapper {
+    width: 245px;
+    min-height: 289px;
+  }
 }

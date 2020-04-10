@@ -1,0 +1,16 @@
+.page-container {
+  width: auto;
+  margin: 0 auto;
+}
+
+@media (min-width: $table-width) {
+  .page-container {
+    width: auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-container {
+    width: auto;
+  }
+}

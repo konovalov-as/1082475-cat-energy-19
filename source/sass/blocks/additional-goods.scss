@@ -1,5 +1,8 @@
-.additional-goods {
-  margin: 0 20px;
+.additional-goods__wrapper {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .additional-goods__title {
@@ -7,6 +10,13 @@
   font-size: 24px;
   line-height: 24px;
   color: $color-black-1;
+  margin: 0;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.additional-product__inner {
+  border-top: 1px solid $bg-color-white-1;
 }
 
 .additional-card-product__title {
@@ -15,6 +25,15 @@
   line-height: 16px;
   color: $color-black-2;
   text-transform: uppercase;
+  margin: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.additional-card-product__wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
 }
 
 .additional-card-product__unit {
@@ -30,4 +49,67 @@
   line-height: 14px;
   text-align: right;
   color: $color-grey-brown;
+}
+
+.additional-card-product__to-order {
+  display: block;
+  margin-bottom: 20px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+@media (min-width: $table-width) {
+  .additional-goods__wrapper {
+    margin-bottom: 50px;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  .additional-goods__title {
+    font-size: 36px;
+    line-height: 36px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+
+  .additional-product__inner {
+    border-left: 1px solid $bg-color-white-1;
+    border-right: 1px solid $bg-color-white-1;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .additional-product__item:last-child .additional-product__inner {
+    border-bottom: 1px solid $bg-color-white-1;
+  }
+
+  .additional-card-product__title {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .additional-card-product__unit {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .additional-card-product__price {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .additional-goods__wrapper {
+    display: flex;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  .additional-product__inner {
+    border-left: none;
+    border-right: none;
+  }
 }

@@ -1,0 +1,22 @@
+.copyright {
+  display: flex;
+  justify-content: space-between;
+}
+
+.copyright__text {
+  font-family: $more-one-font-family;
+  line-height: 16px;
+  color: $color-grey-brown;
+  margin: 0;
+}
+
+.copyright__link {
+  text-decoration: none;
+  color: #666666;
+}
+
+@media (min-width: $table-width) {
+  .copyright__text {
+    text-align: right;
+  }
+}

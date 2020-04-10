@@ -1,0 +1,28 @@
+.characteristic__value {
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  color: $color-black-1;
+  text-transform: uppercase;
+}
+
+.characteristic__label {
+  font-family: $more-one-font-family;
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+  color: $color-grey-brown;
+  text-transform: lowercase;
+}
+
+@media (min-width: $table-width) {
+  .characteristic__value {
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .characteristic__label {
+    font-size: 14px;
+    line-height: 14px;
+  }
+}

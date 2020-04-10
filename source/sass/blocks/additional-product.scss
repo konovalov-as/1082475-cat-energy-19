@@ -1,0 +1,12 @@
+.additional-product {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: $desktop-width) {
+  .additional-product {
+    max-width: 895px;
+    width: 100%;
+  }
+}

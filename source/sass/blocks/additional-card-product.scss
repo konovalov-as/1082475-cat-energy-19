@@ -1,0 +1,24 @@
+.additional-card-product__to-order {
+  text-decoration: none;
+}
+
+@media (min-width: $desktop-width) {
+  .additional-card-product {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  .additional-card-product__title {
+    flex-basis: 180px;
+  }
+
+  .additional-card-product__wrapper {
+    flex-basis: 245px;
+  }
+
+  .additional-card-product__to-order {
+    flex-basis: 245px;
+    margin-bottom: 0;
+  }
+}

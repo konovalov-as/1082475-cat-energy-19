@@ -1,5 +1,8 @@
-.programm-selection {
-  margin: 0 20px;
+.programm-selection__wrapper {
+  margin-top: 0;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .programm-selection__to-do {
@@ -8,12 +11,30 @@
   line-height: 18px;
   color: $color-black-1;
   text-transform: uppercase;
+  max-width: 230px;
+  margin: 0;
+  margin-bottom: 20px;
 }
 
-.programm-selection__required-fields {
-  font-family: $more-one-font-family;
-  font-size: 14px;
-  line-height: 16px;
-  text-align: center;
-  color: $color-grey-brown;
+@media (min-width: $table-width) {
+  .programm-selection__wrapper {
+    margin-top: 0;
+    margin-bottom: 50px;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  .programm-selection__to-do {
+    font-size: 20px;
+    line-height: 30px;
+    max-width: 325px;
+    margin-bottom: 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .programm-selection__wrapper {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
 }

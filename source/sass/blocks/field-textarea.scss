@@ -1,13 +1,14 @@
-.label-questionnaire {
-  font-weight: 400;
+.field-textarea {
   line-height: 18px;
-  color: $color-black-2;
+  color: $color-grey-brown;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 
 @media (min-width: $table-width) {
-  .label-questionnaire {
+  .field-textarea {
     font-size: 20px;
     line-height: 20px;
+    margin-bottom: 20px;
   }
 }

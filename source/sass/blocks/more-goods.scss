@@ -1,5 +1,8 @@
-.more-goods {
-  margin: 0 20px;
+.more-goods__wrapper {
+  margin-top: 0;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .more-goods__label {
@@ -8,6 +11,9 @@
   text-align: center;
   color: $color-black-1;
   text-transform: uppercase;
+  margin: 0;
+  margin-top: 100px;
+  margin-bottom: 10px;
 }
 
 .more-goods__taste {
@@ -16,13 +22,51 @@
   line-height: 16px;
   text-align: center;
   color: $color-grey-brown;
+  margin: 0;
+  margin-bottom: 20px;
 }
 
 .more-goods__show-all {
   font-weight: 400;
   line-height: 20px;
   text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
   color: $color-grey-brown;
   background-color: $bg-color-white-1;
-  text-transform: uppercase;
+  display: block;
+  margin-bottom: 25px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+@media (min-width: $table-width) {
+  .more-goods__wrapper {
+    margin-bottom: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+    max-width: 324px;
+    min-height: 432px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .more-goods__label {
+    font-size: 20px;
+  }
+
+  .more-goods__taste {
+    font-family: $more-one-font-family;
+    font-size: 16px;
+    line-height: normal;
+    text-align: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .more-goods__wrapper {
+    margin-bottom: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
 }
