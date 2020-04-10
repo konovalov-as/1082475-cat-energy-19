@@ -1,4 +1,4 @@
-.field-value {
+.field-textarea {
   line-height: 18px;
   color: $color-grey-brown;
   text-transform: uppercase;
@@ -6,7 +6,7 @@
 }
 
 @media (min-width: $table-width) {
-  .field-value {
+  .field-textarea {
     font-size: 20px;
     line-height: 20px;
     margin-bottom: 20px;

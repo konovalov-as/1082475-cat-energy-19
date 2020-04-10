@@ -1,0 +1,26 @@
+.field-text {
+  font-weight: 400;
+  line-height: 18px;
+  color: $color-black-2;
+  text-transform: uppercase;
+}
+
+.field-text__input {
+  line-height: 18px;
+  color: $color-grey-brown;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+@media (min-width: $table-width) {
+  .field-text {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .field-text__input {
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 20px;
+  }
+}

@@ -51,18 +51,19 @@
               <fieldset class="questionnaire__fieldset">
                 <ul class="questionnaire__list about-cat">
                   <li class="questionnaire__item about-cat__item">
-                    <label class="questionnaire__label">Имя:*
-                      <input class="field-value" name="catName" type="text" placeholder="Барсик">
+                    <label class="field-text">Имя:*
+                      <input class="field-text__input" name="catName" type="text" placeholder="Барсик">
                     </label>
                   </li>
                   <li class="questionnaire__item about-cat__item">
-                    <label class="questionnaire__label">Вес (кг):*
-                      <input class="field-value" name="catWeight" type="number" min="1" placeholder="7">
+                    <label class="field-text">Вес (кг):*
+                      <input class="field-text__input" name="catWeight" type="number" min="1"
+                        placeholder="7">
                     </label>
                   </li>
                   <li class="questionnaire__item about-cat__item">
-                    <label class="questionnaire__label">Возраст (лет):
-                      <input class="field-value" name="catAge" type="number" min="1" placeholder="7">
+                    <label class="field-text">Возраст (лет):
+                      <input class="field-text__input" name="catAge" type="number" min="1" placeholder="7">
                     </label>
                   </li>
                 </ul>
@@ -70,21 +71,21 @@
               <fieldset class="questionnaire__fieldset">
                 <ul class="questionnaire__list">
                   <li class="questionnaire__item advice">
-                    <label class="questionnaire__label">
+                    <label class="field-text">
                       <input class="visually-hidden" name="advice" type="radio" value="slimming" checked>
                       <span class="field-radio"></span>
                       Похудение
                     </label>
                   </li>
                   <li class="questionnaire__item advice">
-                    <label class="questionnaire__label">
+                    <label class="field-text">
                       <input class="visually-hidden" name="advice" type="radio" value="cat-mass-gain">
                       <span class="field-radio"></span>
                       Набор массы
                     </label>
                   </li>
                   <li class="questionnaire__item advice">
-                    <label class="questionnaire__label">
+                    <label class="field-text">
                       <input class="visually-hidden" name="advice" type="radio" value="cat-need-advice">
                       <span class="field-radio"></span>
                       Не знаю (Нужен ваш совет)
@@ -96,8 +97,9 @@
                 <legend class="questionnaire__legend">Контактные данные (владельца кота)</legend>
                 <ul class="questionnaire__list">
                   <li class="questionnaire__item cat-owner">
-                    <label class="questionnaire__label">E-mail:*
-                      <input class="field-value" name="email" type="email" placeholder="kuklachev@gmail.com">
+                    <label class="field-text">E-mail:*
+                      <input class="field-text__input" name="email" type="email"
+                        placeholder="kuklachev@gmail.com">
                       <svg version="1.1" id="Layer_4" xmlns="http://www.w3.org/2000/svg"
                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="18" height="14"
                         viewBox="0 0 17 13" style="enable-background:new 0 0 17 13;" xml:space="preserve">
@@ -107,8 +109,9 @@
                     </label>
                   </li>
                   <li class="questionnaire__item cat-owner">
-                    <label class="questionnaire__label">Телефон:*
-                      <input class="field-value" name="phone" type="tel" placeholder="8 (960) 900-60-90">
+                    <label class="field-text">Телефон:*
+                      <input class="field-text__input" name="phone" type="tel"
+                        placeholder="8 (960) 900-60-90">
                       <svg version="1.1" id="Layer_5" xmlns="http://www.w3.org/2000/svg"
                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21" height="21"
                         viewBox="0 0 20 20" style="enable-background:new 0 0 20 20;" xml:space="preserve">
@@ -125,35 +128,35 @@
               </fieldset>
               <fieldset class="questionnaire__fieldset">
                 <legend class="questionnaire__legend">Комментарий</legend>
-                <textarea class="field-value" name="aboutCat" cols="30" rows="10"
+                <textarea class="field-textarea" name="aboutCat" cols="30" rows="10"
                   placeholder="Расскажите обо всех повадках кота"></textarea>
               </fieldset>
               <fieldset class="questionnaire__fieldset">
                 <legend class="questionnaire__legend">Дополнительно</legend>
                 <ul class="questionnaire__list">
                   <li class="questionnaire__item additionally">
-                    <label class="questionnaire__label">
+                    <label class="field-text">
                       <input class="visually-hidden" name="sweetener" type="checkbox" value="sweetener" checked>
                       <span class="field-checkbox"></span>
                       Сахарозаменитель
                     </label>
                   </li>
                   <li class="questionnaire__item additionally">
-                    <label class="questionnaire__label">
+                    <label class="field-text">
                       <input class="visually-hidden" name="drinkingWater" type="checkbox" value="drinking-water">
                       <span class="field-checkbox"></span>
                       Питьевая вода
                     </label>
                   </li>
                   <li class="questionnaire__item additionally">
-                    <label class="questionnaire__label">
+                    <label class="field-text">
                       <input class="visually-hidden" name="milk" type="checkbox" value="milk">
                       <span class="field-checkbox"></span>
                       Молоко
                     </label>
                   </li>
                   <li class="questionnaire__item additionally">
-                    <label class="questionnaire__label">
+                    <label class="field-text">
                       <input class="visually-hidden" name="vitamins" type="checkbox" value="vitamins">
                       <span class="field-checkbox"></span>
                       Витамины
