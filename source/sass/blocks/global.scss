@@ -28,3 +28,12 @@ input[type="radio"].visually-hidden {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+.no-arrow::-webkit-outer-spin-button,
+.no-arrow::-webkit-inner-spin-button {
+  appearance: none;
+}
+
+.no-arrow {
+  appearance: textfield;
+}

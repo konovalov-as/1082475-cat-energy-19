@@ -20,7 +20,9 @@
           </picture>
         </a>
         <nav class="main-nav">
-          <button class="main-menu-toggle" type="button">Открыть меню</button>
+          <button class="main-menu-toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
           <div class="main-nav__wrapper">
             <ul class="main-nav__list site-list">
               <li class="site-list__item">
@@ -57,13 +59,12 @@
                   </li>
                   <li class="questionnaire__item about-cat__item">
                     <label class="field-text">Вес (кг):*
-                      <input class="field-text__input" name="catWeight" type="number" min="1"
-                        placeholder="7">
+                      <input class="field-text__input no-arrow" name="catWeight" type="number" min="1" placeholder="7">
                     </label>
                   </li>
                   <li class="questionnaire__item about-cat__item">
                     <label class="field-text">Возраст (лет):
-                      <input class="field-text__input" name="catAge" type="number" min="1" placeholder="7">
+                      <input class="field-text__input no-arrow" name="catAge" type="number" min="1" placeholder="7">
                     </label>
                   </li>
                 </ul>
@@ -98,8 +99,7 @@
                 <ul class="questionnaire__list">
                   <li class="questionnaire__item cat-owner">
                     <label class="field-text">E-mail:*
-                      <input class="field-text__input" name="email" type="email"
-                        placeholder="kuklachev@gmail.com">
+                      <input class="field-text__input" name="email" type="email" placeholder="kuklachev@gmail.com">
                       <svg version="1.1" id="Layer_4" xmlns="http://www.w3.org/2000/svg"
                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="18" height="14"
                         viewBox="0 0 17 13" style="enable-background:new 0 0 17 13;" xml:space="preserve">
@@ -110,8 +110,7 @@
                   </li>
                   <li class="questionnaire__item cat-owner">
                     <label class="field-text">Телефон:*
-                      <input class="field-text__input" name="phone" type="tel"
-                        placeholder="8 (960) 900-60-90">
+                      <input class="field-text__input" name="phone" type="tel" placeholder="8 (960) 900-60-90">
                       <svg version="1.1" id="Layer_5" xmlns="http://www.w3.org/2000/svg"
                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21" height="21"
                         viewBox="0 0 20 20" style="enable-background:new 0 0 20 20;" xml:space="preserve">
@@ -128,8 +127,11 @@
               </fieldset>
               <fieldset class="questionnaire__fieldset">
                 <legend class="questionnaire__legend">Комментарий</legend>
-                <textarea class="field-textarea" name="aboutCat" cols="30" rows="10"
-                  placeholder="Расскажите обо всех повадках кота"></textarea>
+                <label class="field-text">
+                  <span class="visually-hidden">Подробнее о коте</span>
+                  <textarea class="field-text__input" name="aboutCat" cols="30" rows="10"
+                    placeholder="Расскажите обо всех повадках кота"></textarea>
+                </label>
               </fieldset>
               <fieldset class="questionnaire__fieldset">
                 <legend class="questionnaire__legend">Дополнительно</legend>

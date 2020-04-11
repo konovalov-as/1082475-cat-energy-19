@@ -10,7 +10,6 @@
 
 .contacts__invite {
   line-height: 20px;
-  color: $color-black-1;
   text-transform: uppercase;
   margin: 0;
 }
@@ -25,16 +24,10 @@
 
 .contacts__box-map {
   background-color: $bg-color-white-2;
-  width: auto;
-  min-height: 400px;
+  height: 400px;
 }
 
-.contacts__map {
-  display: block;
-  width: auto;
-}
-
-@media (min-width: $table-width) {
+@media (min-width: $tablet-width) {
   .contacts__block {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -75,5 +68,11 @@
     padding-bottom: 55px;
     padding-left: 40px;
     padding-right: 40px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts__block {
+    background-color: $color-white;
   }
 }

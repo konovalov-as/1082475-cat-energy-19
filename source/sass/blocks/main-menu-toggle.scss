@@ -1,11 +1,18 @@
 .main-menu-toggle {
   position: absolute;
-  top: 5px;
-  right: 10px;
+  top: 13px;
+  right: 20px;
   padding: 0;
+  width: 25px;
+  height: 19px;
+  background-color: transparent;
+  border: 0;
+  background-image: url("../img/icon-mobile-menu.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-@media (min-width: $table-width) {
+@media (min-width: $tablet-width) {
   .main-menu-toggle {
     display: none;
   }
