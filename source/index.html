@@ -20,7 +20,9 @@
           </picture>
         </a>
         <nav class="main-nav">
-          <button class="main-menu-toggle" type="button">Открыть меню</button>
+          <button class="main-menu-toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
           <div class="main-nav__wrapper">
             <ul class="main-nav__list site-list">
               <li class="site-list__item site-list__item--active">
@@ -44,17 +46,15 @@
       <div class="container">
         <section class="food-for-cat">
           <div class="food-for-cat__wrapper">
-            <div class="food-for-cat__inner">
-              <h2 class="food-for-cat__header">Функциональное питание для котов</h2>
-              <p class="food-for-cat__slogan">Занялся собой? Займись котом!</p>
-            </div>
-            <div class="food-for-cat__box-image">
-              <picture class="food-for-cat__image">
-                <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png">
-                <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg">
-                <img src="img/index-can-mobile@1x.png" alt="Фото оранжевой банки пинания серии «Сat Energy Pro»">
-              </picture>
-            </div>
+            <h2 class="food-for-cat__header">Функциональное питание для котов</h2>
+            <p class="food-for-cat__slogan">Занялся собой? Займись котом!</p>
+          </div>
+          <div class="food-for-cat__box-image">
+            <picture class="food-for-cat__image">
+              <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png">
+              <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg">
+              <img src="img/index-can-mobile@1x.png" alt="Фото оранжевой банки пинания серии «Сat Energy Pro»">
+            </picture>
           </div>
           <a class="food-for-cat__to-selection-programm button button--fs14" href="programm-selection.html">Подобрать
             программу</a>
@@ -119,18 +119,20 @@
             <h2 class="living-example__title">Живой пример</h2>
             <ul class="living-example__list slider__list">
               <li class="living-example__item">
-                <p class="living-example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой
-                  обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял
-                  своих привычек и по-прежнему спит по 16 часов в день.</p>
+                <p class="living-example__description">
+                  Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный
+                  результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16
+                  часов в день.
+                </p>
                 <div class="living-example__inner">
                   <div class="living-example__characteristics characteristic">
                     <div class="characteristic__one">
                       <span class="characteristic__value">5 кг</span>
                       <span class="characteristic__label">снижение веса</span>
                     </div>
-                    <div class=" characteristic__two">
-                      <span class="characteristic__value">5 кг</span>
-                      <span class="characteristic__label">снижение веса</span>
+                    <div class="characteristic__two">
+                      <span class="characteristic__value">60 дней</span>
+                      <span class="characteristic__label">затрачено времени</span>
                     </div>
                   </div>
                   <div class="living-example__costs">

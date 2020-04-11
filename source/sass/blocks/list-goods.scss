@@ -10,24 +10,25 @@
   text-decoration: none;
 }
 
-@media (min-width: $table-width) {
+@media (min-width: $tablet-width) {
   .list-goods {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
   }
 
   .list-goods__item {
     max-width: 324px;
+    width: 100%;
     border-top: none;
-    background-color: $bg-color-white-1;
     margin-bottom: 30px;
     margin-right: 60px;
     padding-left: 30px;
     padding-right: 30px;
-  }
 
-  .list-goods__item:nth-child(even) {
-    margin-right: 0;
+    &:nth-child(even) {
+      margin-right: 0;
+    }
   }
 
   .list-goods__to-order {

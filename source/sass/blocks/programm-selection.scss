@@ -9,14 +9,13 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
-  color: $color-black-1;
   text-transform: uppercase;
   max-width: 230px;
   margin: 0;
   margin-bottom: 20px;
 }
 
-@media (min-width: $table-width) {
+@media (min-width: $tablet-width) {
   .programm-selection__wrapper {
     margin-top: 0;
     margin-bottom: 50px;

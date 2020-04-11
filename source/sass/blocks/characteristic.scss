@@ -1,12 +1,37 @@
+.characteristic {
+  display: flex;
+  justify-content: center;
+}
+
+.characteristic__one {
+  margin-right: 30px;
+}
+
+.characteristic__one,
+.characteristic__two {
+  border: 1px solid $bg-color-white-4;
+  border-radius: 3px;
+  padding-top: 15px;
+  padding-bottom: 0;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
 .characteristic__value {
+  display: block;
   font-size: 24px;
   line-height: 24px;
   text-align: center;
-  color: $color-black-1;
   text-transform: uppercase;
 }
 
 .characteristic__label {
+  display: block;
+  max-width: 60px;
+  position: relative;
+  bottom: -15px;
+  box-shadow: 0 0 0 6px $bg-color-white-1;
+  background-color: $bg-color-white-1;
   font-family: $more-one-font-family;
   font-size: 12px;
   line-height: 12px;
@@ -15,13 +40,17 @@
   text-transform: lowercase;
 }
 
-@media (min-width: $table-width) {
+@media (min-width: $tablet-width) {
   .characteristic__value {
     font-size: 30px;
     line-height: 37px;
   }
 
   .characteristic__label {
+    max-width: 140px;
+    bottom: -6px;
+    box-shadow: 0 0 0 6px $color-white;
+    background-color: $color-white;
     font-size: 14px;
     line-height: 14px;
   }
