@@ -3,9 +3,15 @@
 }
 
 .contacts__block {
-  padding: 20px 20px;
+  position: relative;
+  z-index: 10;
+  padding-top: 29px;
+  padding-bottom: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
   display: flex;
   justify-content: space-between;
+  background-color: $color-white;
 }
 
 .contacts__invite {
@@ -25,14 +31,15 @@
 .contacts__box-map {
   background-color: $bg-color-white-2;
   height: 400px;
+  margin-top: -19px;
 }
 
 @media (min-width: $tablet-width) {
   .contacts__block {
-    padding-top: 50px;
-    padding-bottom: 50px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-top: 64px;
+    padding-bottom: 56px;
+    padding-left: 71px;
+    padding-right: 71px;
   }
 
   .contacts__invite {
@@ -74,5 +81,15 @@
 @media (min-width: $desktop-width) {
   .contacts__block {
     background-color: $color-white;
+    top: 95px;
+    left: 40px;
+    padding-top: 64px;
+    padding-bottom: 57px;
+    padding-left: 76px;
+    padding-right: 88px;
+  }
+
+  .contacts__box-map {
+    margin-top: 0;
   }
 }

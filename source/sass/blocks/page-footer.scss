@@ -18,7 +18,7 @@
   width: 128px;
   height: 24px;
   margin: 0 auto;
-  margin-bottom: 30px;
+  margin-bottom: 31px;
 }
 
 .page-footer__social {
@@ -39,10 +39,27 @@
   .page-footer__wrapper {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding-top: 66px;
+    padding-bottom: 52px;
   }
 
   .page-footer__logo-link {
     border-bottom: none;
+    margin-bottom: 0;
+  }
+
+  .page-footer__logo-image {
+    margin-bottom: 0;
+  }
+
+  .page-footer__social {
+    margin-bottom: 0;
+  }
+
+  .page-footer__copyright {
+    margin-right: 23px;
+    padding-bottom: 0;
   }
 }
 
@@ -50,5 +67,9 @@
   .page-footer {
     padding-left: 40px;
     padding-right: 40px;
+  }
+
+  .page-footer__wrapper {
+    padding-top: 50px;
   }
 }

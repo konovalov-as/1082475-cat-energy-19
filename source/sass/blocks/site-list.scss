@@ -6,7 +6,7 @@
 }
 
 .site-list__item {
-  padding-top: 20px;
+  padding-top: 21px;
   padding-bottom: 20px;
   text-align: center;
   border-bottom: 1px solid $bg-color-white-3;
@@ -32,9 +32,10 @@
   }
 
   .site-list__item {
-    margin-right: 40px;
+    margin-right: 35px;
     text-align: left;
     border-bottom: none;
+    padding-top: 17px;
 
     &:first-child {
       border-top: none;

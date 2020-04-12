@@ -1,6 +1,7 @@
 .copyright {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .copyright__text {
@@ -18,5 +19,10 @@
 @media (min-width: $tablet-width) {
   .copyright__text {
     text-align: right;
+  }
+
+  .copyright__link svg {
+    width: 27px;
+    height: 34px;
   }
 }

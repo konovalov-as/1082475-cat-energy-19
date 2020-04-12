@@ -1,20 +1,19 @@
 .characteristic {
   display: flex;
-  justify-content: center;
+  align-items: flex-start;
 }
 
 .characteristic__one {
-  margin-right: 30px;
+  margin-right: 32px;
 }
 
 .characteristic__one,
 .characteristic__two {
+  width: 124px;
   border: 1px solid $bg-color-white-4;
   border-radius: 3px;
-  padding-top: 15px;
+  padding-top: 13px;
   padding-bottom: 0;
-  padding-left: 25px;
-  padding-right: 25px;
 }
 
 .characteristic__value {
@@ -23,6 +22,7 @@
   line-height: 24px;
   text-align: center;
   text-transform: uppercase;
+  margin: 0 auto;
 }
 
 .characteristic__label {
@@ -36,22 +36,41 @@
   font-size: 12px;
   line-height: 12px;
   text-align: center;
-  color: $color-grey-brown;
   text-transform: lowercase;
+  color: $color-grey-brown;
+  margin: 0 auto;
+  margin-top: -6px;
 }
 
 @media (min-width: $tablet-width) {
+  .characteristic__one,
+  .characteristic__two {
+    width: 162px;
+    padding-top: 14px;
+  }
+
+  .characteristic__one {
+    margin-right: 42px;
+  }
+
   .characteristic__value {
     font-size: 30px;
     line-height: 37px;
   }
 
   .characteristic__label {
-    max-width: 140px;
+    max-width: 130px;
     bottom: -6px;
-    box-shadow: 0 0 0 6px $color-white;
+    box-shadow: 0 0 0 0 $color-white;
     background-color: $color-white;
     font-size: 14px;
     line-height: 14px;
+    margin-top: 5px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .characteristic__label {
+    background-color: transparent;
   }
 }
