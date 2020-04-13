@@ -5,12 +5,12 @@
 
 @media (min-width: $tablet-width) {
   .container {
-    width: $tablet-width;
+    width: auto;
   }
 }
 
 @media (min-width: $desktop-width) {
   .container {
-    width: $desktop-width;
+    width: auto;
   }
 }

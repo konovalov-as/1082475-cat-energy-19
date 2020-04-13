@@ -11,3 +11,6 @@ npm-debug.*
 source/css/*.css
 source/css/*.map
 Thumbs.db
+source/img/index-can-desktop@1x.png
+source/img/index-can-mobile@1x.png
+source/img/index-can-tablet@1x.jpg
