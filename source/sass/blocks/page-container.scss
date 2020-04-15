@@ -1,16 +1,16 @@
 .page-container {
-  width: auto;
+  width: 320px;
   margin: 0 auto;
 }
 
 @media (min-width: $tablet-width) {
   .page-container {
-    width: auto;
+    width: 768px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-container {
-    width: auto;
+    width: 1300px;
   }
 }

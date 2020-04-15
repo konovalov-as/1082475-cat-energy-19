@@ -4,8 +4,8 @@
 
 .page-header__logo-link {
   display: block;
-  margin-top: 15px;
-  margin-bottom: 20px;
+  margin-top: 11px;
+  margin-bottom: 15px;
   margin-left: 20px;
   margin-right: 20px;
 }
@@ -19,11 +19,15 @@
 @media (min-width: $tablet-width) {
   .page-header {
     display: flex;
-    margin-top: 15px;
+    justify-content: center;
+    margin-top: 24px;
+    margin-bottom: 41px;
   }
 
   .page-header__logo-link {
     margin-top: 0;
+    margin-left: 0;
+    margin-right: 95px;
   }
 
   .page-header__logo-image {
@@ -34,6 +38,7 @@
 
 @media (min-width: $desktop-width) {
   .page-header {
+    margin-top: 53px;
     margin-left: 40px;
     margin-right: 40px;
     justify-content: space-between;

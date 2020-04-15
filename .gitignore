@@ -11,3 +11,14 @@ npm-debug.*
 source/css/*.css
 source/css/*.map
 Thumbs.db
+source/img/cat-energy-index-desktop.png
+source/img/cat-energy-index-mobile.png
+source/img/cat-energy-index-tablet.png
+source/img/cat-energy-catalog-desktop.png
+source/img/cat-energy-catalog-mobile.png
+source/img/cat-energy-catalog-tablet.png
+source/img/cat-energy-form-desktop.png
+source/img/cat-energy-form-mobile.png
+source/img/cat-energy-form-tablet.png
+source/css/styles-pixel-glass.css
+source/js/script-pixel-glass.js
