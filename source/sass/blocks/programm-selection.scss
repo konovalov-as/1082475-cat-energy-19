@@ -12,27 +12,28 @@
   text-transform: uppercase;
   max-width: 230px;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 39px;
 }
 
 @media (min-width: $tablet-width) {
   .programm-selection__wrapper {
     margin-top: 0;
-    margin-bottom: 50px;
-    margin-left: 30px;
-    margin-right: 30px;
+    margin-bottom: 72px;
+    margin-left: 70px;
+    margin-right: 70px;
   }
 
   .programm-selection__to-do {
     font-size: 20px;
     line-height: 30px;
     max-width: 325px;
-    margin-bottom: 50px;
+    margin-bottom: 65px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .programm-selection__wrapper {
+    margin-bottom: 82px;
     margin-left: 40px;
     margin-right: 40px;
   }

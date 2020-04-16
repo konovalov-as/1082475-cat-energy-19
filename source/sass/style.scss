@@ -4,7 +4,6 @@
 @import "blocks/fonts.scss";
 @import "blocks/body.scss";
 @import "blocks/container.scss";
-// @import "blocks/page-container.scss";
 
 // header styles
 @import "blocks/site-list.scss";
@@ -44,6 +43,10 @@
 @import "blocks/label-questionnaire.scss";
 @import "blocks/field-text.scss";
 @import "blocks/about-cat.scss";
+@import "blocks/field-radio.scss";
+@import "blocks/field-checkbox.scss";
+@import "blocks/cat-owner.scss";
+@import "blocks/additionally.scss";
 
 // footer
 @import "blocks/social.scss";
