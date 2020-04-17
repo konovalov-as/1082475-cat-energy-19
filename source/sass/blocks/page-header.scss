@@ -12,12 +12,16 @@
     background-repeat: no-repeat;
     background-position: bottom;
     z-index: -1;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/index-background-mobile@2x.jpg");
+      background-size: cover;
+    }
   }
 }
 
 .page-header__wrapper {
   position: relative;
-  margin-bottom: 14px;
 }
 
 .page-header__logo-link {
@@ -72,6 +76,11 @@
       width: 50vw;
       background-image: url("../img/index-background-desktop@1x.jpg");
       background-position: left;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/index-background-desktop@2x.jpg");
+        background-size: cover;
+      }
     }
   }
 

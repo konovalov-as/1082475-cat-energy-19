@@ -71,9 +71,17 @@
   }
 
   .card-product__image {
-    width: 161px;
-    height: 172px;
+    width: auto;
+    height: auto;
     margin: 0 auto;
+  }
+
+  .card-product__image--small {
+    margin-top: -46px;
+  }
+
+  .card-product__image--big {
+    margin-top: -77px;
   }
 
   .card-product__description {
