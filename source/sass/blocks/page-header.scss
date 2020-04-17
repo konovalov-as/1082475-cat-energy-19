@@ -1,4 +1,4 @@
-.page-header {
+.page-header__wrapper {
   position: relative;
 }
 
@@ -17,7 +17,8 @@
 }
 
 @media (min-width: $tablet-width) {
-  .page-header {
+  .page-header__wrapper {
+    position: static;
     display: flex;
     justify-content: center;
     margin-top: 24px;
@@ -37,11 +38,16 @@
 }
 
 @media (min-width: $desktop-width) {
-  .page-header {
+  .page-header__wrapper {
     margin-top: 53px;
     margin-left: 40px;
     margin-right: 40px;
+    margin-bottom: 59px;
     justify-content: space-between;
+  }
+
+  .page-header__logo-link {
+    margin-top: 0;
   }
 
   .page-header__logo-image {

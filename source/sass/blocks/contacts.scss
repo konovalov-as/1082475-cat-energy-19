@@ -1,10 +1,13 @@
+.contacts__block {
+  position: relative;
+  z-index: 10;
+}
+
 .contacts__block--bg {
   background-color: $bg-color-white-1;
 }
 
-.contacts__block {
-  position: relative;
-  z-index: 10;
+.contacts_inner {
   padding-top: 29px;
   padding-bottom: 25px;
   padding-left: 20px;
@@ -35,7 +38,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .contacts__block {
+  .contacts_inner {
     padding-top: 64px;
     padding-bottom: 56px;
     padding-left: 71px;
@@ -57,32 +60,17 @@
 }
 
 @media (min-width: $desktop-width) {
-  .contacts__block--bg {
-    background-color: $color-white;
-  }
-
-  .contacts {
+  .contacts__wrapper {
     position: relative;
   }
 
-  .contacts__block {
+  .contacts_inner {
     position: absolute;
-    top: 90px;
-    left: 50px;
-    z-index: 10;
-    max-width: 570px;
-    padding-top: 55px;
-    padding-bottom: 55px;
-    padding-left: 40px;
-    padding-right: 40px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .contacts__block {
-    background-color: $color-white;
     top: 95px;
     left: 40px;
+    z-index: 10;
+    max-width: 570px;
+    background-color: $color-white;
     padding-top: 64px;
     padding-bottom: 57px;
     padding-left: 76px;

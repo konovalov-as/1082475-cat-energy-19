@@ -1,20 +1,83 @@
 .questionnaire__fieldset {
+  width: 100%;
+  margin: 0;
   padding: 0;
-  margin-bottom: 20px;
   border: 0;
 }
 
+.questionnaire__fieldset--about-cat {
+  margin-bottom: 10px;
+}
+
+.questionnaire__fieldset--advice {
+  margin-bottom: 28px;
+  border-top: 1px solid #ededed;
+  border-bottom: 1px solid #ededed;
+}
+
+.questionnaire__fieldset--cat-owner {
+  margin-bottom: 15px;
+}
+
+.questionnaire__fieldset--commemt {
+  margin-bottom: 13px;
+}
+
+.questionnaire__fieldset--additionally {
+  margin-bottom: 18px;
+}
+
 .questionnaire__legend {
+  position: relative;
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
-  margin-bottom: 20px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 14px;
+    height: 3px;
+    background-color: $bg-color-green-1;
+  }
+}
+
+.questionnaire__legend--contact-data {
+  margin-bottom: 33px;
+}
+
+.questionnaire__legend--comment {
+  margin-bottom: 35px;
+}
+
+.questionnaire__legend--additionally {
+  margin-bottom: 41px;
+}
+
+.questionnaire__legend--contact-data::after {
+  right: -20px;
+  width: 99px;
+}
+
+.questionnaire__legend--comment::after {
+  right: -180px;
+  width: 158px;
+}
+
+.questionnaire__legend--additionally::after {
+  right: -159px;
+  width: 136px;
 }
 
 .questionnaire__list {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.questionnaire__list--advice {
+  padding-top: 27px;
+  padding-bottom: 3px;
 }
 
 .questionnaire__label {
@@ -24,14 +87,18 @@
   text-transform: uppercase;
 }
 
+.questionnaire__wrapper {
+  margin-bottom: 33px;
+}
+
 .questionnaire__send-request {
   vertical-align: top;
   width: 100%;
   border: none;
   margin-bottom: 20px;
   padding: 0;
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding-top: 11px;
+  padding-bottom: 9px;
 }
 
 .questionnaire__required-fields {
@@ -44,14 +111,69 @@
 }
 
 @media (min-width: $tablet-width) {
-  .questionnaire__fieldset {
-    margin-bottom: 50px;
+  .questionnaire__fieldset--about-cat {
+    margin-bottom: 52px;
+  }
+
+  .questionnaire__fieldset--advice {
+    margin-bottom: 73px;
+  }
+
+  .questionnaire__fieldset--cat-owner {
+    margin-bottom: 44px;
+  }
+
+  .questionnaire__fieldset--commemt {
+    margin-bottom: 44px;
+  }
+
+  .questionnaire__fieldset--additionally {
+    margin-bottom: 11px;
   }
 
   .questionnaire__legend {
+    font-weight: 400;
     font-size: 36px;
     line-height: 36px;
-    margin-bottom: 50px;
+
+    &::after {
+      content: "";
+      top: 23px;
+    }
+  }
+
+  .questionnaire__legend--contact-data {
+    margin-bottom: 77px;
+  }
+
+  .questionnaire__legend--comment {
+    margin-bottom: 77px;
+  }
+
+  .questionnaire__legend--additionally {
+    margin-bottom: 67px;
+  }
+
+  .questionnaire__legend--contact-data::after {
+    right: -187px;
+    width: 145px;
+  }
+
+  .questionnaire__legend--comment::after {
+    right: -518px;
+    width: 480px;
+  }
+
+  .questionnaire__legend--additionally::after {
+    right: -487px;
+    width: 447px;
+  }
+
+  .questionnaire__list--advice {
+    padding-top: 33px;
+    padding-bottom: 3px;
+    padding-left: 42px;
+    padding-right: 10px;
   }
 
   .questionnaire__label {
@@ -61,16 +183,55 @@
 
   .questionnaire__wrapper {
     display: flex;
+    align-items: center;
   }
 
   .questionnaire__send-request {
-    flex-basis: 283px;
+    max-width: 283px;
     font-size: 20px;
-    margin-right: 50px;
+    margin-right: 62px;
     margin-bottom: 0;
+    padding-top: 15px;
+    padding-bottom: 17px;
   }
 
   .questionnaire__required-fields {
     font-size: 16px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .questionnaire__inner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 69px;
+  }
+
+  .questionnaire__fieldset--about-cat,
+  .questionnaire__fieldset--advice {
+    margin-bottom: 0;
+    max-width: 570px;
+  }
+
+  .questionnaire__fieldset--cat-owner {
+    margin-bottom: 46px;
+  }
+
+  .questionnaire__fieldset--commemt {
+    margin-bottom: 46px;
+  }
+
+  .about-cat__item:last-child .field-text,
+  .advice:last-child .field-radio {
+    margin-bottom: 0;
+  }
+
+  .additionally__item .field-checkbox {
+    margin-bottom: 0;
+  }
+
+  .questionnaire__send-request {
+    max-width: 569px;
   }
 }

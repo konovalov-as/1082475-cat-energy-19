@@ -1,0 +1,31 @@
+@media (min-width: $tablet-width) {
+  .additionally {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .additionally__item {
+    max-width: 285px;
+    width: 100%;
+
+    &:nth-child(odd) {
+      margin-right: 50px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .additionally {
+    margin-bottom: 61px;
+  }
+
+  .additionally__item {
+    max-width: 245px;
+    width: 100%;
+
+    &:nth-child(odd) {
+      margin-right: 0;
+    }
+  }
+}

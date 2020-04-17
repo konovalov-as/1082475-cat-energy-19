@@ -1,0 +1,16 @@
+.cat-owner__item {
+  position: relative;
+}
+
+@media (min-width: $desktop-width) {
+  .cat-owner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .cat-owner__item {
+    position: relative;
+    max-width: 570px;
+    width: 100%;
+  }
+}
