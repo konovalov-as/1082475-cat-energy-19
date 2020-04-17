@@ -7,7 +7,31 @@
   <title>Кэт энерджи: Каталог продукции</title>
   <link rel="stylesheet" href="css/style.css">
   <!-- Pixel Glass -->
-  <link rel="stylesheet" href="css/styles-pixel-glass-link.css">
+  <style>
+    HTML {
+      background-repeat: no-repeat;
+      background-position: 50% 0;
+      /* Mobile layout by default */
+      background-image: url("../img/cat-energy-catalog-mobile.png");
+    }
+
+    /* Tablet */
+    @media (min-width: 768px) {
+      HTML {
+        /* Tablet layout */
+        background-image: url("../img/cat-energy-catalog-tablet.png");
+      }
+    }
+
+    /* Desktop */
+    @media (min-width: 1300px) {
+      HTML {
+        /* Desktop layout */
+        background-image: url("../img/cat-energy-catalog-desktop.png");
+      }
+    }
+
+  </style>
   <link rel="stylesheet" href="https://yoksel.github.io/pixel-glass-js/styles.css">
   <script src="https://yoksel.github.io/pixel-glass-js/script.js"></script>
   <!-- // Pixel Glass -->
@@ -371,8 +395,8 @@
           </div>
         </div>
       </div>
-      <div class="container">
-        <div class="contacts__box-map">
+      <div class="contacts__picture">
+        <div class="visually-hidden contacts__box-map contacts__box-map--center">
           <picture>
             <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png">
             <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png">
@@ -380,8 +404,8 @@
               alt="Офис компании по адресу ул. Большая Конюшенная, д. 19/8, г. Санкт-Петербург">
           </picture>
         </div>
+        <div class="contacts__box-map" id="map"></div>
       </div>
-      <div class="contacts__box-map" id="map"></div>
     </section>
 
     <footer class="page-footer">

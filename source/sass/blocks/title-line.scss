@@ -1,0 +1,48 @@
+.title-line {
+  position: relative;
+  background: #ffffff;
+
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 100vw;
+    height: 3px;
+    margin-top: 2px;
+    background: #68b738;
+    z-index: -1;
+  }
+
+  &::after {
+    left: 20px;
+  }
+
+  &::before {
+    right: 0;
+  }
+}
+
+.title-line--2-str {
+  &::after,
+  &::before {
+    top: 25%;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .title-line {
+    &::after,
+    &::before {
+      content: "";
+      margin-top: 5px;
+    }
+  }
+
+  .title-line--2-str {
+    &::after,
+    &::before {
+      top: 50%;
+    }
+  }
+}
