@@ -28,18 +28,13 @@
 }
 
 .questionnaire__legend {
-  position: relative;
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
-
-  &::after {
-    content: "";
-    position: absolute;
-    top: 14px;
-    height: 3px;
-    background-color: $bg-color-green-1;
-  }
+  margin-left: -20px;
+  margin-right: -25px;
+  padding-left: 20px;
+  padding-right: 25px;
 }
 
 .questionnaire__legend--contact-data {
@@ -52,21 +47,6 @@
 
 .questionnaire__legend--additionally {
   margin-bottom: 41px;
-}
-
-.questionnaire__legend--contact-data::after {
-  right: -20px;
-  width: 99px;
-}
-
-.questionnaire__legend--comment::after {
-  right: -180px;
-  width: 158px;
-}
-
-.questionnaire__legend--additionally::after {
-  right: -159px;
-  width: 136px;
 }
 
 .questionnaire__list {
@@ -135,11 +115,10 @@
     font-weight: 400;
     font-size: 36px;
     line-height: 36px;
-
-    &::after {
-      content: "";
-      top: 23px;
-    }
+    margin-left: -40px;
+    margin-right: -45px;
+    padding-left: 40px;
+    padding-right: 45px;
   }
 
   .questionnaire__legend--contact-data {
@@ -152,21 +131,6 @@
 
   .questionnaire__legend--additionally {
     margin-bottom: 67px;
-  }
-
-  .questionnaire__legend--contact-data::after {
-    right: -187px;
-    width: 145px;
-  }
-
-  .questionnaire__legend--comment::after {
-    right: -518px;
-    width: 480px;
-  }
-
-  .questionnaire__legend--additionally::after {
-    right: -487px;
-    width: 447px;
   }
 
   .questionnaire__list--advice {
@@ -220,15 +184,6 @@
 
   .questionnaire__fieldset--commemt {
     margin-bottom: 46px;
-  }
-
-  .about-cat__item:last-child .field-text,
-  .advice:last-child .field-radio {
-    margin-bottom: 0;
-  }
-
-  .additionally__item .field-checkbox {
-    margin-bottom: 0;
   }
 
   .questionnaire__send-request {

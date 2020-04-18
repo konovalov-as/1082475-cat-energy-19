@@ -28,6 +28,11 @@
     background-repeat: no-repeat;
     background-position: center;
   }
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/gift-photo-mobile@2x.jpg");
+    background-size: cover;
+  }
 }
 
 .special-offer__present-text {
@@ -53,6 +58,11 @@
     &::before {
       left: 91px;
     }
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/gift-photo-tablet@2x.jpg");
+      background-size: cover;
+    }
   }
 
   .special-offer__present-text {
@@ -76,6 +86,11 @@
 
     &::before {
       left: 95px;
+    }
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/gift-photo-desktop@2x.jpg");
+      background-size: cover;
     }
   }
 

@@ -7,7 +7,31 @@
   <title>Кэт энерджи: Подбор программы</title>
   <link rel="stylesheet" href="css/style.css">
   <!-- Pixel Glass -->
-  <link rel="stylesheet" href="css/styles-pixel-glass-link.css">
+  <style>
+    HTML {
+      background-repeat: no-repeat;
+      background-position: 50% 0;
+      /* Mobile layout by default */
+      background-image: url("../img/cat-energy-form-mobile.png");
+    }
+
+    /* Tablet */
+    @media (min-width: 768px) {
+      HTML {
+        /* Tablet layout */
+        background-image: url("../img/cat-energy-form-tablet.png");
+      }
+    }
+
+    /* Desktop */
+    @media (min-width: 1300px) {
+      HTML {
+        /* Desktop layout */
+        background-image: url("../img/cat-energy-form-desktop.png");
+      }
+    }
+
+  </style>
   <link rel="stylesheet" href="https://yoksel.github.io/pixel-glass-js/styles.css">
   <script src="https://yoksel.github.io/pixel-glass-js/script.js"></script>
   <!-- // Pixel Glass -->
@@ -46,13 +70,13 @@
     </div>
   </header>
 
-  <main class="page-main">
+  <main class="page-main overflow-x">
     <div class="container">
       <h1 class="page-main__title">Подбор программы</h1>
     </div>
 
     <div class="container">
-      <section class="programm-selection">
+      <section class="programm-selection ">
         <div class="programm-selection__wrapper">
           <h2 class="visually-hidden">Анкета питомца</h2>
           <p class="programm-selection__to-do">Заполните анкету и мы подберем программу питания для
@@ -111,7 +135,8 @@
               </fieldset>
             </div>
             <fieldset class="questionnaire__fieldset questionnaire__fieldset--cat-owner">
-              <legend class="questionnaire__legend questionnaire__legend--contact-data">Контактные данные (владельца
+              <legend class="questionnaire__legend questionnaire__legend--contact-data title-line title-line--2-str">
+                Контактные данные (владельца
                 кота)</legend>
               <ul class="questionnaire__list cat-owner">
                 <li class="questionnaire__item cat-owner__item">
@@ -147,7 +172,7 @@
               </ul>
             </fieldset>
             <fieldset class="questionnaire__fieldset questionnaire__fieldset--commemt">
-              <legend class="questionnaire__legend questionnaire__legend--comment">Комментарий</legend>
+              <legend class="questionnaire__legend questionnaire__legend--comment title-line">Комментарий</legend>
               <label class="field-text">
                 <span class="visually-hidden">Подробнее о коте</span>
                 <textarea class="field-text__input field-text__input--textarea" name="aboutCat" rows="6"
@@ -155,7 +180,8 @@
               </label>
             </fieldset>
             <fieldset class="questionnaire__fieldset questionnaire__fieldset--additionally">
-              <legend class="questionnaire__legend questionnaire__legend--additionally">Дополнительно</legend>
+              <legend class="questionnaire__legend questionnaire__legend--additionally title-line">Дополнительно
+              </legend>
               <ul class="questionnaire__list additionally">
                 <li class="questionnaire__item additionally__item">
                   <label class="field-checkbox">
@@ -211,17 +237,17 @@
           </div>
         </div>
       </div>
-      <div class="container">
-        <div class="contacts__box-map">
+      <div class="contacts__picture">
+        <div class="visually-hidden contacts__box-map contacts__box-map--center">
           <picture>
-            <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png">
-            <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png">
-            <img class="contacts__map" src="img/bg-map-mobile@1x.png"
+            <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
+            <img class="contacts__map" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x"
               alt="Офис компании по адресу ул. Большая Конюшенная, д. 19/8, г. Санкт-Петербург">
           </picture>
         </div>
+        <div class="contacts__box-map" id="map"></div>
       </div>
-      <div class="contacts__box-map" id="map"></div>
     </section>
 
     <footer class="page-footer">
