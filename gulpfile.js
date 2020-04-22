@@ -17,6 +17,7 @@ var svgstore = require("gulp-svgstore");
 var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var htmlValidator = require('gulp-w3c-html-validator');
+var gulpHtmlBemValidator = require('gulp-html-bem-validator');
 
 gulp.task("clean", function () {
   return del("build");
@@ -105,6 +106,12 @@ gulp.task("validate-html", function () {
   return gulp.src("source/**/*.html")
   .pipe(htmlValidator())
   .pipe(htmlValidator.reporter());
+});
+
+gulp.task('html-bem-validator', () => {
+  gulp.src('source/*.html')
+    .pipe(gulpHtmlBemValidator())
+    // .pipe(gulp.dest('build/'));
 });
 
 gulp.task("build", gulp.series(
