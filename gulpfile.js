@@ -102,12 +102,6 @@ gulp.task("html", function () {
     .pipe(gulp.dest("build"));
 });
 
-// gulp.task("validate-html", function () {
-//   return gulp.src("build/**/*.html")
-//   .pipe(htmlValidator())
-//   .pipe(htmlValidator.reporter());
-// });
-
 gulp.task("html-bem-validator", async function () {
   gulp.src("build/**/*.html")
     .pipe(htmlValidator())
