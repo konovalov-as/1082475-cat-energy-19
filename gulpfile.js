@@ -102,16 +102,17 @@ gulp.task("html", function () {
     .pipe(gulp.dest("build"));
 });
 
-gulp.task("validate-html", function () {
-  return gulp.src("source/**/*.html")
-  .pipe(htmlValidator())
-  .pipe(htmlValidator.reporter());
-});
+// gulp.task("validate-html", function () {
+//   return gulp.src("build/**/*.html")
+//   .pipe(htmlValidator())
+//   .pipe(htmlValidator.reporter());
+// });
 
-gulp.task('html-bem-validator', () => {
-  gulp.src('source/*.html')
+gulp.task("html-bem-validator", async function () {
+  gulp.src("build/**/*.html")
+    .pipe(htmlValidator())
     .pipe(gulpHtmlBemValidator())
-    // .pipe(gulp.dest('build/'));
+    .pipe(gulp.dest("build"));
 });
 
 gulp.task("build", gulp.series(
