@@ -18,6 +18,8 @@ var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var htmlValidator = require('gulp-w3c-html-validator');
 var gulpHtmlBemValidator = require('gulp-html-bem-validator');
+var uglify = require('gulp-uglify');
+var pipeline = require('readable-stream').pipeline;
 
 gulp.task("clean", function () {
   return del("build");
@@ -27,7 +29,6 @@ gulp.task("copy", function () {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
     "source/img/**",
-    "source/js/**",
     "source/*.ico"
   ], {
     base: "source"
@@ -48,6 +49,15 @@ gulp.task("css", function () {
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css"))
     .pipe(server.stream());
+});
+
+gulp.task("js", function () {
+  return pipeline(
+    gulp.src("source/js/*.js"),
+    uglify(),
+    rename({ suffix: '.min' }),
+    gulp.dest("build/js/")
+  );
 });
 
 gulp.task("server", function () {
@@ -113,6 +123,7 @@ gulp.task("build", gulp.series(
   "clean",
   "copy",
   "css",
+  "js",
   "sprite",
   "html"
 ));
