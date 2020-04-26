@@ -40,11 +40,20 @@
   text-transform: uppercase;
   text-decoration: none;
   color: $color-grey-brown;
-  background-color: $bg-color-white-1;
+  background-color: #f2f2f2;
   display: block;
   margin-bottom: 24px;
   padding-top: 10px;
   padding-bottom: 10px;
+
+  &:hover,
+  &:focus {
+    background-color: #ebebeb;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -52,6 +61,12 @@
     margin-bottom: 20px;
     max-width: 324px;
     min-height: 432px;
+
+    &::before {
+      width: 61px;
+      height: 61px;
+      background-image: url("../img/icon-plus.svg");
+    }
   }
 
   .more-goods__label {

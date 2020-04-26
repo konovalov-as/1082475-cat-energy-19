@@ -4,6 +4,7 @@
 }
 
 .toggles__btn {
+  position: relative;
   line-height: 20px;
   text-transform: uppercase;
   padding: 0;
@@ -46,13 +47,47 @@
 
   .toggles__btn {
     font-size: 20px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      background-color: black;
+      opacity: 0.23;
+      left: 0;
+      bottom: -6px;
+    }
+
+    &:hover,
+    &:focus {
+      &::after {
+        opacity: 0.4;
+      }
+    }
+
+    &:active {
+      &::after {
+        content: none;
+      }
+    }
   }
 
   .toggles__scale {
     width: 34px;
     height: 34px;
+    border: 2px solid #cdcdcd;
     border-radius: 50%;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+
+    &:hover,
+    &:focus {
+      box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.25);
+    }
+
+    &:active {
+      border: 2px solid $bg-color-green-1;
+    }
   }
 
   .toggles__bar {

@@ -21,6 +21,15 @@
   height: 24px;
   margin: 0 auto;
   margin-bottom: 31px;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .page-footer__social {

@@ -20,6 +20,7 @@
 
 .field-text__input {
   width: 100%;
+  min-height: 54px;
   line-height: 18px;
   color: $color-grey-brown;
   text-transform: uppercase;
@@ -27,11 +28,38 @@
   padding-bottom: 12px;
   padding-left: 16px;
   padding-right: 16px;
-  border: 1px solid #cdcdcd;
+  border: 1px solid rgba(205, 205, 205, 0.5);
+
+  &:hover,
+  &:focus {
+    border-color: rgba(205, 205, 205, 1);
+  }
+
+  &:active {
+    border-width: 2px;
+    border-color: $color-grey-brown;
+  }
+
+  &:invalid {
+    border-color: #ff8282;
+    border-width: 2px;
+    box-shadow: none;
+  }
+}
+
+.field-text__input:active + .field-text__svg--email,
+.field-text__input:active + .field-text__svg--phone {
+  fill: #68b738;
+}
+
+.field-text__input:invalid + .field-text__svg--email,
+.field-text__input:invalid + .field-text__svg--phone {
+  fill: #ff8282;
 }
 
 .field-text__svg {
   position: absolute;
+  fill: #222222;
 }
 
 .field-text__svg--email {

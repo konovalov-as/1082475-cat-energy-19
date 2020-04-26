@@ -32,6 +32,15 @@
   margin-right: 20px;
   text-decoration: none;
   color: $base-color;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .page-header__logo-image {

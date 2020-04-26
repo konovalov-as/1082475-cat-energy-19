@@ -20,6 +20,12 @@
   border: 1px solid #cdcdcd;
 }
 
+.field-checkbox__input ~ .field-checkbox__label {
+  &:active {
+    color: rgba(34, 34, 34, 0.3);
+  }
+}
+
 // checked
 .field-checkbox__input:checked + .field-checkbox__indicator::before {
   content: "";
