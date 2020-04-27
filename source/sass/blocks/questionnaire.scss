@@ -6,7 +6,7 @@
 }
 
 .questionnaire__fieldset--about-cat {
-  margin-bottom: 10px;
+  margin-bottom: 13px;
 }
 
 .questionnaire__fieldset--advice {
@@ -16,11 +16,11 @@
 }
 
 .questionnaire__fieldset--cat-owner {
-  margin-bottom: 15px;
+  margin-bottom: 17px;
 }
 
 .questionnaire__fieldset--commemt {
-  margin-bottom: 13px;
+  margin-bottom: 28px;
 }
 
 .questionnaire__fieldset--additionally {
@@ -53,6 +53,10 @@
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.questionnaire__item {
+  margin-bottom: 11px;
 }
 
 .questionnaire__list--advice {
@@ -92,7 +96,7 @@
 
 @media (min-width: $tablet-width) {
   .questionnaire__fieldset--about-cat {
-    margin-bottom: 52px;
+    margin-bottom: 56px;
   }
 
   .questionnaire__fieldset--advice {
@@ -100,15 +104,15 @@
   }
 
   .questionnaire__fieldset--cat-owner {
-    margin-bottom: 44px;
+    margin-bottom: 46px;
   }
 
   .questionnaire__fieldset--commemt {
-    margin-bottom: 44px;
+    margin-bottom: 64px;
   }
 
   .questionnaire__fieldset--additionally {
-    margin-bottom: 11px;
+    margin-bottom: 13px;
   }
 
   .questionnaire__legend {
@@ -131,6 +135,10 @@
 
   .questionnaire__legend--additionally {
     margin-bottom: 67px;
+  }
+
+  .questionnaire__item {
+    margin-bottom: 17px;
   }
 
   .questionnaire__list--advice {
@@ -183,7 +191,7 @@
   }
 
   .questionnaire__fieldset--commemt {
-    margin-bottom: 46px;
+    margin-bottom: 66px;
   }
 
   .questionnaire__fieldset--additionally {
