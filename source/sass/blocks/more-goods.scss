@@ -58,11 +58,12 @@
 
 @media (min-width: $tablet-width) {
   .more-goods__wrapper {
-    margin-bottom: 20px;
     max-width: 324px;
-    min-height: 432px;
+    min-height: 366px;
 
     &::before {
+      margin-top: 54px;
+      margin-bottom: 50px;
       width: 61px;
       height: 61px;
       background-image: url("../img/icon-plus.svg");
@@ -71,20 +72,41 @@
 
   .more-goods__label {
     font-size: 20px;
+    max-width: 135px;
+    margin: 0 auto;
+    margin-bottom: 24px;
   }
 
   .more-goods__taste {
+    max-width: 170px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 88px;
     font-family: $more-one-font-family;
     font-size: 16px;
     line-height: normal;
     text-align: center;
   }
+
+  .more-goods__show-all {
+    max-width: 249px;
+    margin: 0 auto;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .more-goods__wrapper {
-    margin-bottom: 40px;
-    margin-left: 40px;
-    margin-right: 40px;
+    &::before {
+      margin-top: 53px;
+      margin-bottom: 48px;
+    }
+
+    .more-goods__label {
+      margin-bottom: 25px;
+    }
+
+    .more-goods__show-all {
+      max-width: 170px;
+    }
   }
 }

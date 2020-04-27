@@ -3,9 +3,11 @@
   font-size: 36px;
   line-height: 60px;
   color: #111111;
-  margin: 0;
-  margin-bottom: 25px;
   margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 0;
+  margin-bottom: 25px;
+  padding-top: 15px;
 }
 
 @media (min-width: $tablet-width) {
@@ -13,16 +15,13 @@
     font-size: 60px;
     margin-bottom: 57px;
     margin-left: 30px;
-  }
-
-  .page-main__title--catalog {
-    margin-bottom: 166px;
+    padding-top: 0;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-main__title {
-    margin-bottom: 56px;
+    margin-bottom: 57px;
     margin-left: 40px;
   }
 }

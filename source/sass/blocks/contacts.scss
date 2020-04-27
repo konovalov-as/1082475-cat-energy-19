@@ -1,19 +1,17 @@
-.contacts__block {
+.contacts__inner {
   position: relative;
   z-index: 10;
-}
-
-.contacts__block--bg {
-  background-color: $bg-color-white-1;
-}
-
-.contacts_inner {
-  padding-top: 29px;
-  padding-bottom: 25px;
+  background-color: white;
+  padding-top: 27px;
+  padding-bottom: 24px;
   padding-left: 20px;
   padding-right: 20px;
   display: flex;
   justify-content: space-between;
+}
+
+.contacts__inner--bg {
+  background-color: $bg-color-white-1;
 }
 
 .contacts__invite {
@@ -34,7 +32,7 @@
 .contacts__box-map {
   background-color: $bg-color-white-2;
   height: 400px;
-  margin-top: -19px;
+  margin-top: -38px;
 }
 
 .contacts__box-map--center {
@@ -42,7 +40,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .contacts_inner {
+  .contacts__inner {
     padding-top: 64px;
     padding-bottom: 56px;
     padding-left: 71px;
@@ -61,6 +59,10 @@
     text-align: right;
     flex-basis: 154px;
   }
+
+  .contacts__box-map {
+    margin-top: 0;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -68,7 +70,7 @@
     position: relative;
   }
 
-  .contacts_inner {
+  .contacts__inner {
     position: absolute;
     top: 95px;
     left: 40px;

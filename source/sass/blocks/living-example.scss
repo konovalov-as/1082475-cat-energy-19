@@ -5,7 +5,7 @@
 .living-example__wrapper {
   margin-left: 20px;
   margin-right: 20px;
-  padding-bottom: 36px;
+  padding-bottom: 35px;
 }
 
 .living-example__title {
@@ -13,7 +13,7 @@
   font-size: 36px;
   line-height: 60px;
   margin: 0;
-  margin-bottom: 24px;
+  margin-bottom: 21px;
   padding-top: 16px;
 }
 
@@ -30,7 +30,7 @@
   line-height: 18px;
   color: $color-grey-brown;
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 22px;
 }
 
 .living-example__characteristics {
@@ -38,7 +38,7 @@
 }
 
 .living-example__costs {
-  margin-bottom: 41px;
+  margin-bottom: 34px;
   text-align: center;
 }
 
@@ -50,14 +50,11 @@
 }
 
 .living-example__box-photo {
-  margin-bottom: 15px;
-}
-
-.living-example__photo {
   display: block;
   width: 311px;
   height: 232px;
-  margin-left: -13px;
+  margin: 0 auto;
+  margin-left: -20px;
 }
 
 .living-example__toggles {
@@ -112,14 +109,18 @@
   .living-example__inner {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 50px;
+    margin-bottom: 80px;
+  }
+
+  .living-example__characteristics {
+    margin-bottom: 0;
   }
 
   .living-example__costs {
     max-width: 180px;
     width: 100%;
     text-align: right;
-    margin-top: 6px;
+    margin-bottom: 0;
     font-size: 20px;
   }
 
@@ -128,13 +129,10 @@
   }
 
   .living-example__box-photo {
-    margin-bottom: 0;
-  }
-
-  .living-example__photo {
     width: 690px;
     height: 517px;
     margin: 0 auto;
+    margin-bottom: 18px;
   }
 
   .living-example__toggles {
@@ -185,7 +183,8 @@
     margin-bottom: 23px;
   }
 
-  .living-example__photo {
+  .living-example__box-photo {
+    margin-bottom: 0;
     position: absolute;
     bottom: 135px;
     right: -40px;

@@ -1,6 +1,5 @@
 .special-offer {
   margin-top: 0;
-  margin-bottom: 30px;
 }
 
 .special-offer__link {
@@ -76,7 +75,7 @@
 
 @media (min-width: $desktop-width) {
   .special-offer {
-    margin-bottom: 0;
+    margin-bottom: 0; //
   }
 
   .special-offer__wrapper {

@@ -5,12 +5,12 @@
     content: "";
     position: absolute;
     right: 0;
-    min-height: 306px;
+    min-height: 300px;
     width: 100%;
     background-color: $bg-color-green-2;
     background-image: url("../img/index-background-mobile@1x.jpg");
     background-repeat: no-repeat;
-    background-position: bottom;
+    background-position: center;
     z-index: -1;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -26,7 +26,7 @@
 
 .page-header__logo-link {
   display: block;
-  margin-top: 11px;
+  margin-top: 10px;
   margin-bottom: 15px;
   margin-left: 20px;
   margin-right: 20px;
@@ -97,7 +97,7 @@
     margin-left: 40px;
     margin-right: 40px;
     margin-bottom: 59px;
-    padding-top: 53px;
+    padding-top: 54px;
     justify-content: space-between;
   }
 
