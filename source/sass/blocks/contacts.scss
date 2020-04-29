@@ -9,10 +9,8 @@
 }
 
 .contacts__inner {
-  padding-top: 27px;
+  padding-top: 28px;
   padding-bottom: 24px;
-  padding-left: 20px;
-  padding-right: 20px;
   display: flex;
   justify-content: space-between;
 }
@@ -50,8 +48,8 @@
   .contacts__inner {
     padding-top: 64px;
     padding-bottom: 56px;
-    padding-left: 71px;
-    padding-right: 71px;
+    padding-left: 41px;
+    padding-right: 41px;
   }
 
   .contacts__invite {
@@ -83,10 +81,20 @@
     left: 40px;
     z-index: 10;
     max-width: 570px;
+    justify-content: flex-start;
+    background-color: $color-white;
     padding-top: 64px;
     padding-bottom: 57px;
-    padding-left: 76px;
-    padding-right: 88px;
+    padding-left: 36px;
+    padding-right: 36px;
+  }
+
+  .contacts__invite {
+    margin-right: 96px;
+  }
+
+  .contacts__address {
+    text-align: left;
   }
 
   .contacts__box-map {

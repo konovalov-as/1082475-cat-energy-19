@@ -193,24 +193,42 @@
                     </div>
                   </div>
                   <div class="living-example__costs">
-                    <span class="living-example__costs-value">затраты на питание: 15 000 руб.</span>
+                    <span class="living-example__costs-value">затраты на питание: <span class="living-example__costs-price">15 000 руб.</span></span>
                   </div>
                 </div>
-                <div class="living-example__box-photo">
-                  <picture>
-                    <source type="image/webp" media="(min-width: 1300px)"
-                      srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x">
-                    <source type="image/webp" media="(min-width: 768px)"
-                      srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x">
-                    <source type="image/webp" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x">
+                <div class="living-example__photo">
+                  <div class="living-example__box-photo-before">
+                    <picture>
+                      <source type="image/webp" media="(min-width: 1300px)"
+                        srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x">
+                      <source type="image/webp" media="(min-width: 768px)"
+                        srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x">
+                      <source type="image/webp" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x">
 
-                    <source media="(min-width: 1300px)"
-                      srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
-                    <source media="(min-width: 768px)"
-                      srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
-                    <img class="living-example__photo" src="img/before-mobile@1x.png"
-                      srcset="img/before-mobile@2x.png 2x" alt="Фото кота Бориса">
-                  </picture>
+                      <source media="(min-width: 1300px)"
+                        srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
+                      <source media="(min-width: 768px)"
+                        srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
+                      <img class="living-example__photo-before" src="img/before-mobile@1x.png"
+                        srcset="img/before-mobile@2x.png 2x" alt="Фото кота Бориса">
+                    </picture>
+                  </div>
+                  <div class="living-example__box-photo-after">
+                    <picture>
+                      <source type="image/webp" media="(min-width: 1300px)"
+                        srcset="img/after-desktop@1x.webp 1x, img/after-desktop@2x.webp 2x">
+                      <source type="image/webp" media="(min-width: 768px)"
+                        srcset="img/after-tablet@1x.webp 1x, img/after-tablet@2x.webp 2x">
+                      <source type="image/webp" srcset="img/after-mobile@1x.webp 1x, img/after-mobile@2x.webp 2x">
+
+                      <source media="(min-width: 1300px)"
+                        srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
+                      <source media="(min-width: 768px)"
+                        srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
+                      <img class="living-example__photo-after" src="img/after-mobile@1x.png"
+                        srcset="img/after-mobile@2x.png 2x" alt="Фото кота Бориса">
+                    </picture>
+                  </div>
                 </div>
               </div>
             </li>

@@ -6,7 +6,7 @@
 }
 
 .questionnaire__fieldset--about-cat {
-  margin-bottom: 13px;
+  margin-bottom: 9px;
 }
 
 .questionnaire__fieldset--advice {
@@ -16,7 +16,7 @@
 }
 
 .questionnaire__fieldset--cat-owner {
-  margin-bottom: 17px;
+  margin-bottom: 15px;
 }
 
 .questionnaire__fieldset--commemt {
@@ -56,7 +56,7 @@
 }
 
 .questionnaire__item {
-  margin-bottom: 11px;
+  margin-bottom: 14px;
 }
 
 .questionnaire__list--advice {
@@ -96,15 +96,17 @@
 
 @media (min-width: $tablet-width) {
   .questionnaire__fieldset--about-cat {
-    margin-bottom: 56px;
+    margin-bottom: 52px;
   }
 
   .questionnaire__fieldset--advice {
-    margin-bottom: 73px;
+    margin-bottom: 74px;
+    border-left: 1px solid #ededed;
+    border-right: 1px solid #ededed;
   }
 
   .questionnaire__fieldset--cat-owner {
-    margin-bottom: 46px;
+    margin-bottom: 44px;
   }
 
   .questionnaire__fieldset--commemt {
@@ -138,13 +140,13 @@
   }
 
   .questionnaire__item {
-    margin-bottom: 17px;
+    margin-bottom: 20px;
   }
 
   .questionnaire__list--advice {
-    padding-top: 33px;
+    padding-top: 32px;
     padding-bottom: 3px;
-    padding-left: 42px;
+    padding-left: 40px;
     padding-right: 10px;
   }
 
@@ -177,7 +179,7 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-bottom: 69px;
+    margin-bottom: 67px;
   }
 
   .questionnaire__fieldset--about-cat,
@@ -195,10 +197,11 @@
   }
 
   .questionnaire__fieldset--additionally {
-    margin-bottom: 9px;
+    margin-bottom: 52px;
   }
 
   .questionnaire__send-request {
     max-width: 569px;
+    margin-right: 82px;
   }
 }
