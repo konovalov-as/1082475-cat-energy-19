@@ -200,7 +200,7 @@
     }
 
     &::after {
-      width: 25%;
+      width: calc(50% - 322px);
     }
   }
 
