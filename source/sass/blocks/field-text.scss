@@ -17,9 +17,13 @@
   margin-right: 10px;
 }
 
+.field-text__inner {
+  width: 100%;
+}
+
 .field-text__input {
   width: 100%;
-  min-height: 47px;
+  height: 47px;
   line-height: 18px;
   color: $color-grey-brown;
   text-transform: uppercase;
@@ -89,7 +93,7 @@
   }
 
   .field-text__input {
-    min-height: 54px;
+    height: 54px;
     font-size: 20px;
     line-height: 20px;
     padding-top: 14px;
