@@ -13,35 +13,6 @@
     document.createElement("picture");
   </script>
   <script src="js/picturefill.min.js" async></script>
-  <!-- Pixel Glass -->
-  <style>
-    HTML {
-      background-repeat: no-repeat;
-      background-position: 50% 0;
-      /* Mobile layout by default */
-      background-image: url("../img/cat-energy-catalog-mobile.png");
-    }
-
-    /* Tablet */
-    @media (min-width: 768px) {
-      HTML {
-        /* Tablet layout */
-        background-image: url("../img/cat-energy-catalog-tablet.png");
-      }
-    }
-
-    /* Desktop */
-    @media (min-width: 1300px) {
-      HTML {
-        /* Desktop layout */
-        background-image: url("../img/cat-energy-catalog-desktop.png");
-      }
-    }
-
-  </style>
-  <link rel="stylesheet" href="https://yoksel.github.io/pixel-glass-js/styles.css">
-  <script src="https://yoksel.github.io/pixel-glass-js/script.js"></script>
-  <!-- // Pixel Glass -->
 </head>
 
 <body class="body">
@@ -473,7 +444,7 @@
         </div>
       </div>
       <div class="contacts__picture">
-        <div class="visually-hidden contacts__box-map contacts__box-map--center">
+        <div class="contacts__box-map contacts__box-map--center contacts__box-map--static">
           <picture>
             <source type="image/webp" media="(min-width: 1300px)"
               srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
@@ -487,59 +458,69 @@
               alt="Офис компании по адресу ул. Большая Конюшенная, д. 19/8, г. Санкт-Петербург">
           </picture>
         </div>
-        <div class="contacts__box-map" id="map"></div>
+        <div class="visually-hidden contacts__box-map contacts__box-map--interactive" id="map"></div>
       </div>
     </section>
 
-    <footer class="page-footer">
-      <div class="container">
-        <div class="page-footer__wrapper">
-          <a class="page-footer__logo-link" href="index.html">
-            <img class="page-footer__logo-image" src="img/logo-footer.svg" width="128" height="24"
-              alt="Интернет-магазин «Кэт энерджи»">
+  </main>
+
+  <footer class="page-footer">
+    <div class="container">
+      <div class="page-footer__wrapper">
+        <a class="page-footer__logo-link" href="index.html">
+          <img class="page-footer__logo-image" src="img/logo-footer.svg" width="128" height="24"
+            alt="Интернет-магазин «Кэт энерджи»">
+        </a>
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--vkontakte" href="">
+                <span class="visually-hidden">Мы в Вконтакте</span>
+                <svg width="22" height="12">
+                  <use xlink:href="img/sprite.svg#icon-vk"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--instagram" href="">
+                <span class="visually-hidden">Мы в Instagram</span>
+                <svg width="17" height="17">
+                  <use xlink:href="img/sprite.svg#icon-insta"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="">
+                <span class="visually-hidden">Мы в Facebook</span>
+                <svg width="10" height="19">
+                  <use xlink:href="img/sprite.svg#icon-fb"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <p class="copyright__text">HTML Academy</p>
+            <span class="visually-hidden">Разработано HTML Academy</span>
+            <svg width="26.943" height="34.09">
+              <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
+            </svg>
           </a>
-          <div class="page-footer__social social">
-            <ul class="social__list">
-              <li class="social__item">
-                <a class="social__link social__link--vkontakte" href="">
-                  <span class="visually-hidden">Мы в Вконтакте</span>
-                  <svg width="22" height="12">
-                    <use xlink:href="img/sprite.svg#icon-vk"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social__item">
-                <a class="social__link social__link--instagram" href="">
-                  <span class="visually-hidden">Мы в Instagram</span>
-                  <svg width="17" height="17">
-                    <use xlink:href="img/sprite.svg#icon-insta"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social__item">
-                <a class="social__link social__link--facebook" href="">
-                  <span class="visually-hidden">Мы в Facebook</span>
-                  <svg width="10" height="19">
-                    <use xlink:href="img/sprite.svg#icon-fb"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="page-footer__copyright copyright">
-            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-              <p class="copyright__text">HTML Academy</p>
-              <span class="visually-hidden">Разработано HTML Academy</span>
-              <svg width="26.943" height="34.09">
-                <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
-              </svg>
-            </a>
-          </div>
         </div>
       </div>
-    </footer>
+    </div>
+  </footer>
 
-  </main>
+  <div class="container">
+    <section class="modal hidden">
+      <h2 class="modal__title">Оформление заказа</h2>
+      <p class="modal__description">Окно в разработке</p>
+      <button class="modal__close" type="button">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
+    </section>
+  </div>
 
   <!-- svg4everybody -->
   <script src="js/svg4everybody.min.js"></script>

@@ -3,8 +3,21 @@
 }
 
 .special-offer__link {
+  display: block;
   text-decoration: none;
   color: $color-white;
+}
+
+.special-offer__link:hover .special-offer__wrapper {
+  box-shadow: inset 0 0 150px rgba(0, 0, 0, 0.2);
+}
+
+.special-offer__link:active .special-offer__present-text {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.special-offer__link:active .special-offer__wrapper::before {
+  opacity: 0.3;
 }
 
 .special-offer__wrapper {

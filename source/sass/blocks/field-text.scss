@@ -99,16 +99,26 @@
   }
 
   .field-text__svg--email {
-    top: 18px;
-    right: 19px;
+    top: 19px;
+    right: 16px;
   }
 
   .field-text__svg--phone {
-    top: 15px;
-    right: 18px;
+    top: 16px;
+    right: 12px;
   }
 
   .field-text__input--textarea {
     min-height: 174px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .field-text__svg--email {
+    right: 19px;
+  }
+
+  .field-text__svg--phone {
+    right: 18px;
   }
 }
