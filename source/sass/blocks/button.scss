@@ -4,6 +4,15 @@
   color: $color-white;
   background-color: $bg-color-green-1;
   text-transform: uppercase;
+
+  &:hover,
+  &:focus {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .button--fs14 {

@@ -24,20 +24,26 @@
   .list-goods__item {
     max-width: 324px;
     width: 100%;
-    border-top: none;
-    // margin-bottom: 30px;
-    margin-bottom: 202px;
+    border: 1px solid $bg-color-white-1;
+    margin-bottom: 138px;
     margin-right: 60px;
-    padding-left: 30px;
-    padding-right: 30px;
 
     &:nth-child(even) {
       margin-right: 0;
     }
+
+    &:nth-last-child(-n+2) {
+      margin-bottom: 45px;
+    }
+
+    &:last-child {
+      border: 1px solid $bg-color-white-1;
+    }
   }
 
   .list-goods__to-order {
-    margin-top: 30px;
+    max-width: 249px;
+    margin: 0 auto;
     margin-bottom: 40px;
   }
 }
@@ -50,9 +56,18 @@
   .list-goods__item {
     max-width: 245px;
     margin-right: 80px;
+    margin-bottom: 142px;
+
+    &:nth-last-child(-n+4) {
+      margin-bottom: 53px;
+    }
   }
 
   .list-goods__item:nth-child(4n+4) {
     margin-right: 0;
+  }
+
+  .list-goods__to-order {
+    max-width: 169px;
   }
 }

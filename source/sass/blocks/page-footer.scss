@@ -3,10 +3,8 @@
 }
 
 .page-footer__wrapper {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-top: 41px;
+  padding-bottom: 25px;
 }
 
 .page-footer__logo-link {
@@ -21,6 +19,15 @@
   height: 24px;
   margin: 0 auto;
   margin-bottom: 31px;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .page-footer__social {
@@ -32,15 +39,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 66px;
-    padding-bottom: 52px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-top: 60px;
+    padding-bottom: 59px;
   }
 
   .page-footer__logo-link {
     border-bottom: none;
     margin-bottom: 0;
+    margin-right: 20px;
   }
 
   .page-footer__logo-image {
@@ -54,8 +60,7 @@
 
 @media (min-width: $desktop-width) {
   .page-footer__wrapper {
-    padding-top: 50px;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-top: 59px;
+    padding-bottom: 57px;
   }
 }

@@ -21,6 +21,12 @@
   border-radius: 50%;
 }
 
+.field-radio__input ~ .field-radio__label {
+  &:active {
+    color: rgba(34, 34, 34, 0.3);
+  }
+}
+
 // checked
 .field-radio__input:checked + .field-radio__indicator::before {
   content: "";

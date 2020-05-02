@@ -1,7 +1,7 @@
-@import "blocks/variables.scss";
-@import "blocks/normalize.scss";
-@import "blocks/global.scss";
-@import "blocks/fonts.scss";
+@import "global/variables.scss";
+@import "global/normalize.scss";
+@import "global/global.scss";
+@import "global/fonts.scss";
 @import "blocks/body.scss";
 @import "blocks/container.scss";
 
@@ -15,6 +15,7 @@
 
 // main menu toggle
 @import "blocks/main-menu-toggle.scss";
+@import "blocks/main-nav.scss";
 
 // page index
 @import "blocks/food-for-cat.scss";

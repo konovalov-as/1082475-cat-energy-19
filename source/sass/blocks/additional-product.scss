@@ -15,7 +15,7 @@
 
 @media (min-width: $tablet-width) {
   .additional-product {
-    margin-bottom: 0;
+    margin-bottom: 71px;
   }
 
   .additional-product__inner {
@@ -37,13 +37,14 @@
     max-width: 895px;
     width: 100%;
     margin-right: 80px;
+    margin-bottom: 0;
   }
 
   .additional-product__inner {
     border-left: none;
     border-right: none;
-    padding-top: 15px;
-    padding-bottom: 16px;
+    padding-top: 17px;
+    padding-bottom: 14px;
     padding-left: 0;
     padding-right: 0;
   }

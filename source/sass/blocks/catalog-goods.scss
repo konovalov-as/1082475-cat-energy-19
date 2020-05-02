@@ -1,8 +1,7 @@
 .catalog-goods__wrapper {
   margin-top: 0;
   margin-bottom: 0;
-  margin-left: 20px;
-  margin-right: 20px;
+  padding-top: 4px;
 }
 
 .catalog-goods__list {
@@ -13,14 +12,6 @@
 
 @media (min-width: $tablet-width) {
   .catalog-goods__wrapper {
-    margin-left: 30px;
-    margin-right: 30px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .catalog-goods__wrapper {
-    margin-left: 40px;
-    margin-right: 40px;
+    padding-top: 108px;
   }
 }

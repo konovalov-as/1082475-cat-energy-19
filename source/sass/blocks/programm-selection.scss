@@ -1,8 +1,6 @@
 .programm-selection__wrapper {
   margin-top: 0;
   margin-bottom: 20px;
-  margin-left: 20px;
-  margin-right: 20px;
 }
 
 .programm-selection__to-do {
@@ -19,22 +17,22 @@
   .programm-selection__wrapper {
     margin-top: 0;
     margin-bottom: 72px;
-    margin-left: 70px;
-    margin-right: 70px;
+    margin-left: 40px;
+    margin-right: 40px;
   }
 
   .programm-selection__to-do {
     font-size: 20px;
     line-height: 30px;
     max-width: 325px;
-    margin-bottom: 65px;
+    margin-bottom: 64px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .programm-selection__wrapper {
     margin-bottom: 82px;
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: 0;
+    margin-right: 0;
   }
 }

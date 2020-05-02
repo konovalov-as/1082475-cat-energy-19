@@ -4,37 +4,15 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title>Кэт энерджи: Подбор программы</title>
   <link rel="stylesheet" href="css/style.min.css">
-  <!-- Pixel Glass -->
-  <style>
-    HTML {
-      background-repeat: no-repeat;
-      background-position: 50% 0;
-      /* Mobile layout by default */
-      background-image: url("../img/cat-energy-form-mobile.png");
-    }
-
-    /* Tablet */
-    @media (min-width: 768px) {
-      HTML {
-        /* Tablet layout */
-        background-image: url("../img/cat-energy-form-tablet.png");
-      }
-    }
-
-    /* Desktop */
-    @media (min-width: 1300px) {
-      HTML {
-        /* Desktop layout */
-        background-image: url("../img/cat-energy-form-desktop.png");
-      }
-    }
-
-  </style>
-  <link rel="stylesheet" href="https://yoksel.github.io/pixel-glass-js/styles.css">
-  <script src="https://yoksel.github.io/pixel-glass-js/script.js"></script>
-  <!-- // Pixel Glass -->
+  <!-- picturefill -->
+  <script>
+    // Picture element HTML5 shiv
+    document.createElement("picture");
+  </script>
+  <script src="js/picturefill.min.js" async></script>
 </head>
 
 <body class="body">
@@ -48,7 +26,7 @@
             <img class="page-header__logo-image" src="img/logo-mobile.svg" alt="Интернет-магазин «Кэт энерджи»">
           </picture>
         </a>
-        <nav class="main-nav">
+        <nav class="main-nav main-nav--closed main-nav--nojs">
           <button class="main-menu-toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
@@ -60,8 +38,8 @@
               <li class="site-list__item">
                 <a class="site-list__link" href="catalog-products.html">Каталог продукции</a>
               </li>
-              <li class="site-list__item site-list__item--active">
-                <a class="site-list__link">Подбор программы</a>
+              <li class="site-list__item">
+                <a class="site-list__link site-list__link--active">Подбор программы</a>
               </li>
             </ul>
           </div>
@@ -100,7 +78,9 @@
                   <li class="questionnaire__item about-cat__item">
                     <label class="field-text">
                       <span class="field-text__label">Возраст (лет):</span>
-                      <input class="field-text__input no-arrow" name="catAge" type="number" min="1" placeholder="7">
+                      <span class="field-text__inner">
+                        <input class="field-text__input no-arrow" name="catAge" type="number" min="1" placeholder="7">
+                      </span>
                     </label>
                   </li>
                 </ul>
@@ -151,7 +131,8 @@
                 <li class="questionnaire__item cat-owner__item">
                   <label class="field-text">
                     <span class="field-text__label field-text__label--cat-owner">Телефон:*</span>
-                    <input class="field-text__input" name="phone" type="tel" placeholder="8 (960) 900-60-90">
+                    <input class="field-text__input" name="phone" type="tel"
+                      pattern="[0-9]{1} \([0-9]{3}\) [0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="8 (960) 900-60-90">
                     <svg class="field-text__svg field-text__svg--phone" width="21" height="21">
                       <use xlink:href="img/sprite.svg#icon-phone"></use>
                     </svg>
@@ -218,15 +199,16 @@
       <div class="contacts__block contacts__block--bg">
         <div class="container">
           <div class="contacts__wrapper">
-            <div class="contacts_inner">
-              <p class="contacts__invite">приглашаем к сотрудничеству дилеров!</p>
-              <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+            <div class="contacts__inner">
+              <p class="contacts__invite">приглашаем к&nbsp;сотрудничеству дилеров!</p>
+              <p class="contacts__address">ул.&nbsp;Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span>
+              </p>
             </div>
           </div>
         </div>
       </div>
       <div class="contacts__picture">
-        <div class="visually-hidden contacts__box-map contacts__box-map--center">
+        <div class="contacts__box-map contacts__box-map--center contacts__box-map--static">
           <picture>
             <source type="image/webp" media="(min-width: 1300px)"
               srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
@@ -240,62 +222,67 @@
               alt="Офис компании по адресу ул. Большая Конюшенная, д. 19/8, г. Санкт-Петербург">
           </picture>
         </div>
-        <div class="contacts__box-map" id="map"></div>
+        <div class="visually-hidden contacts__box-map contacts__box-map--interactive" id="map"></div>
       </div>
     </section>
 
-    <footer class="page-footer">
-      <div class="container">
-        <div class="page-footer__wrapper">
-          <a class="page-footer__logo-link" href="index.html">
-            <img class="page-footer__logo-image" src="img/logo-footer.svg" width="128" height="24"
-              alt="Интернет-магазин «Кэт энерджи»">
-          </a>
-          <div class="page-footer__social social">
-            <ul class="social__list">
-              <li class="social__item">
-                <a class="social__link social__link--vkontakte" href="">
-                  <span class="visually-hidden">Мы в Вконтакте</span>
-                  <svg width="22" height="12">
-                    <use xlink:href="img/sprite.svg#icon-vk"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social__item">
-                <a class="social__link social__link--instagram" href="">
-                  <span class="visually-hidden">Мы в Instagram</span>
-                  <svg width="17" height="17">
-                    <use xlink:href="img/sprite.svg#icon-insta"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social__item">
-                <a class="social__link social__link--facebook" href="">
-                  <span class="visually-hidden">Мы в Facebook</span>
-                  <svg width="10" height="19">
-                    <use xlink:href="img/sprite.svg#icon-fb"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="page-footer__copyright copyright">
-            <p class="copyright__text">HTML Academy</p>
-            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-              <span class="visually-hidden">Разработано HTML Academy</span>
-              <svg width="26.943" height="34.09">
-                <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
-              </svg>
-            </a>
-          </div>
-        </div>
-      </div>
-    </footer>
-
   </main>
 
+  <footer class="page-footer">
+    <div class="container">
+      <div class="page-footer__wrapper">
+        <a class="page-footer__logo-link" href="index.html">
+          <img class="page-footer__logo-image" src="img/logo-footer.svg" width="128" height="24"
+            alt="Интернет-магазин «Кэт энерджи»">
+        </a>
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--vkontakte" href="">
+                <span class="visually-hidden">Мы в Вконтакте</span>
+                <svg width="22" height="12">
+                  <use xlink:href="img/sprite.svg#icon-vk"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--instagram" href="">
+                <span class="visually-hidden">Мы в Instagram</span>
+                <svg width="17" height="17">
+                  <use xlink:href="img/sprite.svg#icon-insta"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="">
+                <span class="visually-hidden">Мы в Facebook</span>
+                <svg width="10" height="19">
+                  <use xlink:href="img/sprite.svg#icon-fb"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <p class="copyright__text">HTML Academy</p>
+            <span class="visually-hidden">Разработано HTML Academy</span>
+            <svg width="26.943" height="34.09">
+              <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- svg4everybody -->
+  <script src="js/svg4everybody.min.js"></script>
+  <script>svg4everybody(); // run it now or whenever you are ready</script>
+  <!-- yandex map -->
   <script src="https://api-maps.yandex.ru/2.1/?apikey=04ee10fc-51b0-4eb0-bece-6806ca0cad49&lang=ru_RU"></script>
-  <script src="js/map.js"></script>
+  <script src="js/map.min.js"></script>
+  <script src="js/script.min.js"></script>
 
 </body>
 
