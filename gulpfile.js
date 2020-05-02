@@ -20,6 +20,7 @@ var htmlValidator = require('gulp-w3c-html-validator');
 var gulpHtmlBemValidator = require('gulp-html-bem-validator');
 var uglify = require('gulp-uglify');
 var pipeline = require('readable-stream').pipeline;
+const htmlmin = require('gulp-htmlmin');
 
 gulp.task("clean", function () {
   return del("build");
@@ -106,9 +107,8 @@ gulp.task("sprite", function () {
 
 gulp.task("html", function () {
   return gulp.src("source/*.html")
-    .pipe(posthtml([
-      include()
-    ]))
+    .pipe(posthtml([include()]))
+    .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest("build"));
 });
 
