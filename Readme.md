@@ -1,5 +1,6 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
+* Опубликованная версия: [Кэт энерджи](https://konovalov-as.github.io/1082475-cat-energy-19/).
 * Студент: [Александр Коновалов](https://up.htmlacademy.ru/adaptive/19/user/1082475).
 * Наставник: [Ярослав Шевцов](https://htmlacademy.ru/profile/redx).
 
